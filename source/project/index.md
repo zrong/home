@@ -10,32 +10,32 @@ nicename: project
 
 ## ANE Toolkit
 
-<http://blog.zengrong.net/anetoolkit/>
+<https://blog.zengrong.net/anetoolkit/>
 
 ## Plantform ANEs
 
-<http://blog.zengrong.net/platform-anes/>
+<https://blog.zengrong.net/platform-anes/>
 
 ## Sprite Sheet Editor
 
-<http://blog.zengrong.net/sprite_sheet_editor/>
+<https://blog.zengrong.net/spritesheeteditor/>
 
 ## Cocos2d-x Filters
 
-<http://blog.zengrong.net/cocos2d-x-filters/>
+<https://blog.zengrong.net/cocos2d-x-filters/>
 
 ## WPCMD
 
-<http://blog.zengrong.net/wpcmd/>
+<https://blog.zengrong.net/wpcmd/>
 
 ## AS3 library
 
-http://github.com/zrong/as3
+https://github.com/zrong/as3
 
 ## rookout
 
-<http://github.com/zrong/rookout>
+<https://github.com/zrong/rookout>
 
 ## Lua library
 
-<http://github.com/zrong/lua>
+<https://github.com/zrong/lua>
