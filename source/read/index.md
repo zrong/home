@@ -37,7 +37,7 @@ nicename: read
 |1721| [专注的快乐][1721] | 2017-07-01| 2017-07-13 | |
 |1722| [人类简史：从动物到上帝][1722] | 2017-07-15| 2017-07-30 | |
 |1723| [ECMAScript6 标准入门][1723] | 2017-08-15| 2017-08-18 | |
-|1724| [思考，快与慢][1724] | 2017-08-13| | |
+|1724| [思考，快与慢][1724] | 2017-08-13| | [读书笔记]() |
 
 [1701]: https://book.douban.com/subject/1082178/
 [1702]: https://book.douban.com/subject/26648290/
@@ -63,6 +63,7 @@ nicename: read
 [1722]: https://book.douban.com/subject/25985021/
 [1723]: http://es6.ruanyifeng.com/
 [1724]: https://book.douban.com/subject/10785583/
+[1724m]: https://blog.zengrong.net/post/2657.html
 
 <a name="2016"></a>
 # 2016
@@ -117,7 +118,7 @@ nicename: read
 
 
 [1601]: http://book.douban.com/subject/11524362/
-[1601m]: http://zengrong.net/post/2411.htm
+[1601m]: https://blog.zengrong.net/post/2411.html
 [1602]: http://book.douban.com/subject/25777982/
 [1603]: http://book.douban.com/subject/26648238/
 [1604]: http://book.douban.com/subject/26685458/
@@ -137,7 +138,7 @@ nicename: read
 [1618]: https://book.douban.com/subject/26759508/
 [1619]: https://book.douban.com/subject/24250054/
 [1620]: https://book.douban.com/subject/3878077/
-[1620m]: https://zengrong.net/post/2555.htm
+[1620m]: https://blog.zengrong.net/post/2555.html
 [1621]: https://book.douban.com/subject/3354490/
 [1622]: https://book.douban.com/subject/3176760/
 [1623]: https://book.douban.com/subject/1418686/
@@ -153,7 +154,7 @@ nicename: read
 [1634]: https://book.douban.com/subject/3264655/
 [1635]: https://read.douban.com/ebook/20769128/
 [1636]: https://book.douban.com/subject/26411095/
-[1636m]: http://zengrong.net/post/2577.htm
+[1636m]: https://blog.zengrong.net/post/2577.html
 [1637]: https://book.douban.com/subject/3176755/
 [1638]: https://book.douban.com/subject/26608585/
 [1639]: https://book.douban.com/subject/1467022/
@@ -202,43 +203,43 @@ nicename: read
 |1531| [中国2185][31] |  2015-12-15 | 2015-12-18 | 已读 |
 |1532| [项目管理十步法][32] [在线阅读][32a] | 2015-12-23 |  | **10%** |
 
-[1]: http://book.douban.com/subject/10746113/
-[2]: http://book.douban.com/subject/10485421/
-[3]: http://book.douban.com/subject/25829693/
-[4]: http://book.douban.com/subject/6709783/
-[5]: http://book.douban.com/subject/24935042/
-[6]: http://book.douban.com/subject/10608238/
-[6m]: http://zengrong.net/post/2274.htm
-[7]: http://book.douban.com/subject/26274202/
+[1]: https://book.douban.com/subject/10746113/
+[2]: https://book.douban.com/subject/10485421/
+[3]: https://book.douban.com/subject/25829693/
+[4]: https://book.douban.com/subject/6709783/
+[5]: https://book.douban.com/subject/24935042/
+[6]: https://book.douban.com/subject/10608238/
+[6m]: https://blog.zengrong.net/post/2274.html
+[7]: https://book.douban.com/subject/26274202/
 [8]: http://bbs.tianya.cn/post-english-121795-1.shtml
-[8d]: http://zengrong.net/download/121/
+[8d]: https://aid.zengrong.net/dl/go/121/
 [9]: https://www.packtpub.com/game-development/cocos2d-x-example-beginners-guide-second-edition
-[10]: http://book.douban.com/subject/26297606/
-[10m]: http://zengrong.net/post/2333.htm
-[11]: http://book.douban.com/subject/26352270/
-[12]: http://book.douban.com/subject/26359758/
-[12m]: http://zengrong.net/post/2328.htm
-[13]: http://book.douban.com/subject/20492550/
-[14]: http://book.douban.com/subject/26381341/
-[15]: http://book.douban.com/subject/10733265/
-[16]: http://book.douban.com/subject/2052176/
-[17]: http://book.douban.com/subject/25848404/
+[10]: https://book.douban.com/subject/26297606/
+[10m]: https://blog.zengrong.net/post/2333.html
+[11]: https://book.douban.com/subject/26352270/
+[12]: https://book.douban.com/subject/26359758/
+[12m]: https://blog.zengrong.net/post/2328.html
+[13]: https://book.douban.com/subject/20492550/
+[14]: https://book.douban.com/subject/26381341/
+[15]: https://book.douban.com/subject/10733265/
+[16]: https://book.douban.com/subject/2052176/
+[17]: https://book.douban.com/subject/25848404/
 [18]: http://www.typescriptlang.org/Handbook
 [18a]: http://zhongsp.gitbooks.io/typescript-handbook/content/
-[19]: http://book.douban.com/subject/1082102/
-[20]: http://book.douban.com/subject/4710853/
-[20m]: http://zengrong.net/post/2370.htm
-[21]: http://book.douban.com/subject/26392294/
-[22]: http://book.douban.com/subject/5372651/
-[23]: http://book.douban.com/subject/1703952/
-[24]: http://book.douban.com/subject/3071688/
-[25]: http://book.douban.com/subject/1132956/
-[26]: http://book.douban.com/subject/1776683/
-[27]: http://book.douban.com/subject/10767124/
-[28]: http://book.douban.com/subject/3636385/
-[29]: http://book.douban.com/subject/1012611/
-[29m]: http://zengrong.net/post/2407.htm
-[30]: http://book.douban.com/subject/26318807/
-[31]: http://book.douban.com/subject/24253393/
-[32]: http://book.douban.com/subject/1291070/
+[19]: https://book.douban.com/subject/1082102/
+[20]: https://book.douban.com/subject/4710853/
+[20m]: https://zengrong.net/post/2370.html
+[21]: https://book.douban.com/subject/26392294/
+[22]: https://book.douban.com/subject/5372651/
+[23]: https://book.douban.com/subject/1703952/
+[24]: https://book.douban.com/subject/3071688/
+[25]: https://book.douban.com/subject/1132956/
+[26]: https://book.douban.com/subject/1776683/
+[27]: https://book.douban.com/subject/10767124/
+[28]: https://book.douban.com/subject/3636385/
+[29]: https://book.douban.com/subject/1012611/
+[29m]: https://blog.zengrong.net/post/2407.html
+[30]: https://book.douban.com/subject/26318807/
+[31]: https://book.douban.com/subject/24253393/
+[32]: https://book.douban.com/subject/1291070/
 [32a]: https://books.google.com/books?id=XuXp0UjwjKEC&printsec=frontcover&hl=zh-CN#v=onepage&q&f=false
