@@ -1,0 +1,15 @@
+{% include 'includes/head.njk' %}
+<div id="outer-container">
+  <div id="container">
+    {% include 'includes/menu.njk' %}
+    <div id="content-outer">
+      <div id="content-inner">
+        {# {% autoescape false %}{{ body }}{% endautoescape %} #}
+        {% block body %}{% endblock %}
+      </div>
+    </div>
+    {% include 'includes/bottom.njk' %}
+  </div>
+</div>
+{%- include 'includes/analytics.njk' %}
+{%- include 'includes/foot.njk' %}

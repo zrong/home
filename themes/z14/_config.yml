@@ -1,0 +1,62 @@
+
+# html lang
+language: zh_CN
+
+# main menu navigation
+menu:
+  Home: index.html
+  Blog: https://blog.zengrong.net
+  阅读: read
+  项目: project
+  推荐: recommend
+  About: about
+
+news:
+  - title: Flask+uWSGI 的 Logging 支持
+    url: https://blog.zengrong.net/post/2660.html
+  - title: 在 Python+uWSGI 应用中使用缓存
+    url: https://blog.zengrong.net/post/2659.html
+  - title: 【读书笔记】思考，快与慢（二）
+    url: https://blog.zengrong.net/post/2658.html
+  - title: 【读书笔记】思考，快与慢（一）
+    url: https://blog.zengrong.net/post/2657.html
+  - title: 在 Flask-SQLAlchemy 中联表查询
+    url: https://blog.zengrong.net/post/2656.html
+  - title: Windows10 下安装 PyCrypto 以及迁移到 PyCryptodome
+    url: https://blog.zengrong.net/post/2655.html
+  - title: lftp [FEAT negotiation...]
+    url: https://blog.zengrong.net/post/2654.html
+  - title: mitmproxy 应用（二）可编程代理
+    url: https://blog.zengrong.net/post/2653.html
+  - title: mitmproxy 应用（一）基础代理
+    url: https://blog.zengrong.net/post/2652.html
+  - title: 如何写出难看的代码（一）
+    url: https://blog.zengrong.net/post/2651.html
+
+social:
+  GitHub: https://github.com/zrong
+  ZhiHu: https://www.zhihu.com/people/zrong
+
+analytics:
+  google: UA-178999-3
+  baidu: 8159b7b98721e2fa296611608732c888
+
+comment:
+  changyan: null
+
+# Miscelaneous
+favicon: /favicon.ico
+
+# stylesheets loaded in the <head>
+stylesheets:
+  - /css/bootstrap.min.css
+  - /css/iconfont.css
+  - /css/z14.css
+
+# scripts loaded in the end of the body
+scripts:
+  - /js/jquery-3.2.1.min.js
+  - /js/bootstrap.min.js
+  - /js/z14.js
+
+avatar: https://file.zengrong.net/blog/jacky_icon_120x120.jpg

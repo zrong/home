@@ -1,0 +1,30 @@
+{% set icons = {
+  'rss':'&#xe60e;',
+  'douban':'&#xe60f;',
+  'twitter':'&#xe600;',
+  'linkedin':'&#xe601;',
+  'weibo':'&#xe602;',
+  'google-plus':'&#xe603;',
+  'facebook':'&#xe604;',
+  'dribbble':'&#xe605;',
+  'github':'&#xe606;',
+  'coding':'&#xe607;',
+  'npmjs':'&#xe608;',
+  'youtube':'&#xe60a;',
+  'zhihu':'&#xe60b;',
+  'lofter':'&#xe60d;',
+  'quora':'&#xe60c;',
+  'instagram':'&#xe613;',
+  'segmentfault':'&#xe611;',
+  'stackoverflow':'&#xe612;',
+  'jian':'&#xe614;'
+}
+%}
+<ul class="social">
+  {%- for k,v in theme.social %}
+  {%- set k = k|lower %}
+  <li>
+    <a href="{{ v }}">{%- if icons[k] %}<span class="icon iconfont {{ k }}">{{ icons[k] }}</span>{% else %}{{ k }}{% endif %}</a>
+  </li>
+  {%- endfor %}
+</ul>

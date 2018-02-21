@@ -1,0 +1,39 @@
+{% include 'includes/head.njk' %}
+{% block meta %}{% endblock %}
+<div class="z14-center">
+  <div id="z14-index">
+    <div class="center-field">
+      <img class="avatar" src="{{ theme.avatar }}" width=120 height=120">
+    </div>
+    <div class="center-field">
+      <div class="title">{{ config.title }}</div>
+      <div class="sub-title">{{ config.subtitle }}</div>
+    </div>
+    <hr >
+    <div class="center-field">
+      <ul class="index-nav-link">
+        {%- for k, v in theme.menu  %}
+          {%- if v != '/'  %}
+            <li><a href="{{ url_for(v) }}">{{ k }}</a></li>
+          {%- endif %}
+        {%- endfor %}
+      </ul>
+      {% include 'includes/social.njk' %}
+    </div>
+    {%- if theme.news %}
+    <div class="center-field row">
+      {%- for obj in theme.news  %}
+      {%- if loop.index == 1 or loop.index == 6 %}
+      <ul class="index-news-link col-md-6">
+      {%- endif %}
+          <li><a href="{{ url_for(obj.url) }}">{{ obj.title }}</a></li>
+      {%- if loop.index == 5 or loop.index == 10 %}
+      </ul>
+      {%- endif %}
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </div>
+</div>
+{%- include 'includes/analytics.njk' %}
+{%- include 'includes/foot.njk' %}

@@ -1,0 +1,21 @@
+<div id="menu-outer" class="slide-down">
+  <div id="menu-inner">
+    <div id="brand">
+      {# <a href="{{ url_for('/') }}"> #}
+      <img id="avatar" src="{{theme.avatar}}"/>
+      <div id="homelink">{{config.title}}</div>
+    </div>
+    <div id="menu-list">
+      <ul>
+        {%- for k, v in theme.menu %}
+          {%- if v != '/'  %}
+            <li><a href="{{ url_for(v) }}">{{ k }}</a></li>
+          {%- endif %}
+        {%- endfor %}
+      </ul>
+    </div>
+    <div id="show-menu">
+      <button>Menu</button>
+    </div>
+  </div>
+</div>
