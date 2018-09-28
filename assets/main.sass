@@ -1,0 +1,130 @@
+.top-menu-hr
+  background-color: #dbdbdb
+  border: none
+  display: block
+  min-height: 3.3rem
+  margin: 0
+    
+.page-title-left
+  display: flex
+  padding: 10px 10px
+  align-items: center
+
+  a
+    padding-left: 5px
+    font-size: 1rem
+    color: #34495e
+    text-shadow: 1px 1px rgb(127, 140, 141)
+
+.navbar-menu-trans
+  background: transparent
+
+.avatar
+  border: 2px solid white
+  border-radius: 50%
+  background-color: #ecf0f1
+  box-shadow: 0 0px 3px 1px rgba(0,0,0,0.3)
+
+.avatar-small
+  width: 30px
+  height: 30px
+  cursor: pointer
+
+#main-article
+  padding: 16px
+  background-color: white
+
+.container-normal
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+
+.container-top
+  @extend .container-normal
+  align-items: baseline
+  margin-top: 5vh
+
+$grey-lighter: hsl(0, 0%, 86%) !default
+$table-cell-border: 1px solid $grey-lighter !default
+$table-cell-border-width: 0 0 1px !default
+
+@media screen and (max-width: 600px)
+  .is-responsive
+    width: 100%
+    border-collapse: collapse
+    border-spacing: 0
+    display: block
+    position: relative
+
+    td:empty:before
+      content: '\00a0'
+
+    th,
+    td
+      margin: 0
+      vertical-align: top
+
+    th
+      text-align: left
+
+    thead
+      border-right: solid 2px $grey-lighter
+      display: block
+      float: left
+
+      tr
+        display: block
+        padding: 0 10px 0 0
+
+        th::before
+          content: "\00a0"
+      td,
+      th
+        border-width: 0 0 1px
+
+    tbody
+      display: block
+      width: auto
+      position: relative
+      overflow-x: auto
+      white-space: nowrap
+
+      tr
+        display: inline-block
+        vertical-align: top
+
+    th
+      display: block
+      text-align: right
+
+    td
+      display: block
+      min-height: 1.25em
+      text-align: left
+
+    th,
+    td
+      &:last-child
+        border-bottom-width: 0
+
+    tr
+      &:last-child
+        td:not(:last-child)
+          border: $table-cell-border
+          border-width: $table-cell-border-width
+
+    &.is-bordered
+      td,
+      th
+        border-width: 1px
+      tr
+        td,
+        th
+          &:last-child
+            border-bottom-width: 1px
+        &:last-child
+          td,
+          th
+            border-width: 1px
