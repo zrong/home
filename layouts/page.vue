@@ -19,11 +19,10 @@
         <span>静态文件存储由</span>
         <a
           href="https://www.upyun.com/?md=zengrong"
-          target="_blank"
-          class="label label-info">又拍云存储提供</a>
+          target="_blank">又拍云存储</a>
+        <span>提供</span>
       </div>
-      <div
-        class="is-size-7">鄂ICP备05002429号</div>
+      <div class="is-size-7">鄂ICP备05002429号</div>
     </footer>
   </div>
 </template>
