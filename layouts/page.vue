@@ -8,7 +8,7 @@
         href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
         target="_blank">
         <img
-          src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png"
+          src="~assets/by-nc-sa-88x31.png"
           alt="CC BY-NC-SA"
           width="88"
           height="31">

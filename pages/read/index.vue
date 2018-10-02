@@ -2,24 +2,30 @@
   <div id="main-article">
     <h1 class="title">阅读</h1>
     <hr>
-    <div
+    <article
       v-for="rt in readingList"
-      :key="rt.title">
-      <h3 class="title is-3">{{ rt.title }} </h3>
-      <h5 class="subtitle is-5">
-        预定计划： {{ rt.plan }} 本
-        <b-switch
-          v-model="rt.show"
-          size="is-small"
-          type="is-info">
-          详细列表
-        </b-switch>
-      </h5>
-      <div
-        v-if="rt.show"
-        v-html="rt.text" />
+      :key="rt.title"
+      class="media">
+      <div class="media-left">
+        <h3 class="media-left title is-3">{{ rt.title }} </h3>
+      </div>
+      <div class="media-content">
+        <h5 class="subtitle is-5">
+          预定计划： {{ rt.plan }} 本
+        </h5>
+        <div
+          v-if="rt.show"
+          class="content" 
+          v-html="rt.text" />
+      </div>
+      <b-switch
+        v-model="rt.show"
+        type="is-info"
+        class="media-right">
+        详细列表
+      </b-switch>
       <hr>
-    </div>
+    </article>
   </div>
 </template>
 
@@ -45,7 +51,3 @@ export default {
   }
 }
 </script>
-
-<style lang="sass">
-</style>
-

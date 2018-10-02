@@ -1,6 +1,6 @@
 # home
 
-> zengrong.net in Nuxt
+> zengrong.net in Nuxt 2
 
 ## Build Setup
 

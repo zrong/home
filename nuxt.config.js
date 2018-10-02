@@ -8,7 +8,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: '曾嵘的主页',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
@@ -51,6 +51,14 @@ module.exports = {
     preset: 'default',
     linkify: true,
     breaks: true,
+    injected: true
+  },
+  /*
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    injected: true,
     use: [
       // ['markdown-it-container', 'md'],
       // 'markdown-it-attrs'
@@ -58,7 +66,7 @@ module.exports = {
     preprocess (markdownIt, source) {
       // 为 table 加入 class
       markdownIt.renderer.rules.table_open = function(tokens, idx) {
-        return '<table class="table is-striped is-fullwidth is-bordered is-responsive">\n';
+        return '<table class="table is-striped is-fullwidth is-bordered is-responsive">\n'
       }
       // 为 H 加入class
       markdownIt.renderer.rules.heading_open = function(tokens, idx, options, env, slf) {
@@ -73,8 +81,9 @@ module.exports = {
         return util.format('<%s>', token.tag)
       }
       return source
-    },
+    }
   },
+  */
   /*
   ** Axios module configuration
   */
