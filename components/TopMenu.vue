@@ -53,10 +53,10 @@ export default {
   data () {
     return {
       menus: [
-        {name: '阅读', path: '/read'},
-        {name: '项目', path: '/project'},
-        {name: '推荐', path: '/recommend'},
-        {name: '关于', path: '/about'}
+        {name: '阅读', path: '/read/'},
+        {name: '项目', path: '/project/'},
+        {name: '推荐', path: '/recommend/'},
+        {name: '关于', path: '/about/'}
       ],
       showMenus: false
     }
