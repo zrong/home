@@ -1,24 +1,43 @@
 <template>
-  <div>
-    <main-article
-      :title="title"
-      :html-text="htmlText" />
+  <div id="main-article">
+    <h1 class="title">关于</h1>
+    <hr>
+    <article v-html="aboutText" />
+    <hr>
     <nav class="level">
       <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Jacky的微信</p>
+        <figure>
+          <figcaption class="heading">Jacky 的微信</figcaption>
           <img
             alt="我的微信"
-            src="~assets/about-wechat-zrongzrong-258.jpg">
+            src="@/assets/about-wechat-zrongzrong-258.jpg">
+        </figure>
+      </div>
+      <div class="level-item">
+        <div>
+          <figure>
+            <b-icon icon="email" />
+            <img
+              alt="E-mail"
+              src="@/assets/about-gmail.png">
+          </figure>
+          <figure>
+            <b-icon icon="github-circle" />
+            <a
+              href="https://github.com/zrong/"
+              target="_blank">
+              github.com/zrong
+            </a>
+          </figure>
         </div>
       </div>
       <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">公众号：曾嵘胡扯的地方</p>
+        <figure>
+          <figcaption class="heading">公众号：曾嵘胡扯的地方</figcaption>
           <img
             alt="公众号：曾嵘胡扯的地方"
-            src="~assets/about-mp-zrong-net-258.jpg">
-        </div>
+            src="@/assets/about-mp-zrong-net-258.jpg">
+        </figure>
       </div>
     </nav>
   </div>
@@ -33,11 +52,8 @@ export default {
   components: {MainArticle},
   data () {
     return {
-      htmlText: text,
-      title: '关于'
+      aboutText: text
     }
-  },
-  created () {
   }
 }
 </script>
