@@ -47,6 +47,10 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/markdownit
     '@nuxtjs/markdownit'
   ],
+  buefy: {
+    // default //cdn.materialdesignicons.com/2.4.85/css/materialdesignicons.min.css
+    materialDesignIconsHRef: '//cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css'
+  },
   markdownit: {
     preset: 'default',
     linkify: true,
