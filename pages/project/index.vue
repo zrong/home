@@ -63,7 +63,7 @@
 const GAME = [
   {
     name: '天才射手',
-    desc: '微信小游戏中的第一个作品，对战类。详细可以阅读我博客上的 [系列文章](https://blog.zengrong.net/tag/youshootfirst/) 。',
+    desc: '微信小游戏平台的第一个作品，回合制对战。详细可以阅读我博客上的 [系列文章](https://blog.zengrong.net/tag/youshootfirst/) 。',
     platform: ['微信小游戏', 'QQ轻游戏'],
     icon: ['project-game-ysf.png', 'project-game-ysf-qqqr.png', 'project-game-ysf-wxqr.png'],
     age: [2018, '']
@@ -77,20 +77,20 @@ const GAME = [
   },
   {
     name: '麻将',
-    desc: '从这个游戏开始转型制作人。同时负责一部分开发工作。做了五种玩法，在团队中推行全栈开发。',
+    desc: '从这个游戏开始转型制作人。负责一部分开发工作。做了五种玩法，发现了团队全栈开发的高效。',
     platform: ['HTML5-微信公众平台', 'Android', 'iOS'],
     age: [2016, 2017]
   },
   {
     name: '小小联盟',
-    desc: '一个 MOBA 手游。这个产品立项很早，但中间推倒重来好几次。最终很遗憾没有上线运营。',
+    desc: '一个 MOBA 手游。这个产品立项很早，但中间推倒重来好几次。很遗憾没有上线运营。',
     platform: ['Cocos2d-X', 'Android', 'iOS'],
     icon: ['project-game-yhq.png'],
     age: [2012, 2014]
   },
   {
     name: '卧龙传',
-    desc: '三国题材的 SLG 手游。我的第一款手游作品。在国内上了多个市场，同时代理到台湾、韩国运营。',
+    desc: '三国题材的 SLG 手游。第一款手游作品。在中国大陆、香港、台湾、韩国运营。',
     platform: ['Adobe AIR', 'Android', 'iOS'],
     icon: ['project-game-wlz.png'],
     age: [2010, 2011]
@@ -100,7 +100,7 @@ const GAME = [
 const TOOL = [
   {
     name: 'WPCMD',
-    desc: 'WPCMD(WordPress command) 是一个通过 WordPress XML-RPC 接口在本地创建、更新 WordPress 博客的命令行工具。 zengrong.net 使用了很长时间的 WordPress，在那期间，也使用本工具进行管理。',
+    desc: 'WPCMD(WordPress command) 是一个通过 WordPress XML-RPC 接口在本地创建、更新 WordPress 博客的命令行工具。 [zengrong.net](https://zengrong.net) 使用了很长时间的 WordPress，也使用本工具进行管理。',
     url: 'https://blog.zengrong.net/wpcmd/',
     platform: ['Python', 'Shell'],
     age: [2015, 2016]
@@ -196,9 +196,6 @@ export default {
 </script>
 
 <style>
-.imageicons {
-}
-
 .imageicons img {
     background-color: white;
     border-radius: 4px;
