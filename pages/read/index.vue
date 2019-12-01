@@ -34,13 +34,15 @@ import read2015 from './2015.md'
 import read2016 from './2016.md'
 import read2017 from './2017.md'
 import read2018 from './2018.md'
+import read2019 from './2019.md'
 
 export default {
   layout: 'page',
   data () {
     return {
       readingList: [
-        {title: 2018, plan: 30, text: read2018, show: true},
+        {title: 2019, plan: 50, text: read2019, show: true},
+        {title: 2018, plan: 30, text: read2018, show: false},
         {title: 2017, plan: 30, text: read2017, show: false},
         {title: 2016, plan: 40, text: read2016, show: false},
         {title: 2015, plan: 30, text: read2015, show: false}

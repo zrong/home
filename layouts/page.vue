@@ -13,15 +13,6 @@
           width="88"
           height="31">
       </a>
-      <div
-        id="upyun"
-        class="is-size-7">
-        <span>静态文件存储由</span>
-        <a
-          href="https://console.upyun.com/register/?invite=HJTT7dvEW"
-          target="_blank">又拍云存储</a>
-        <span>提供</span>
-      </div>
       <div class="is-size-7">鄂ICP备05002429号</div>
     </footer>
   </div>

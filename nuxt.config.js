@@ -49,7 +49,8 @@ module.exports = {
   ],
   buefy: {
     // default //cdn.materialdesignicons.com/2.4.85/css/materialdesignicons.min.css
-    materialDesignIconsHRef: '//cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css'
+    // materialDesignIconsHRef: '//cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css'
+    materialDesignIconsHRef: '//cdn.bootcss.com/MaterialDesign-Webfont/4.4.95/css/materialdesignicons.min.css'
   },
   markdownit: {
     preset: 'default',

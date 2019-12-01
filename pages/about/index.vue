@@ -19,7 +19,7 @@
             <b-icon icon="email" />
             <img
               alt="E-mail"
-              src="@/assets/about-gmail.png">
+              src="@/assets/about-email.png">
           </figure>
           <figure>
             <b-icon icon="github-circle" />
@@ -27,6 +27,14 @@
               href="https://github.com/zrong/"
               target="_blank">
               github.com/zrong
+            </a>
+          </figure>
+          <figure>
+            <b-icon icon="library-books" />
+            <a
+              href="https://blog.zengrong.net"
+              target="_blank">
+              zrong's blog
             </a>
           </figure>
         </div>

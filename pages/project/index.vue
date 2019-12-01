@@ -62,18 +62,32 @@
 
 const GAME = [
   {
-    name: '天才射手',
-    desc: '微信小游戏平台的第一个作品，回合制对战。详细可以阅读我博客上的 [系列文章](https://blog.zengrong.net/tag/youshootfirst/) 。',
-    platform: ['微信小游戏', 'QQ轻游戏'],
-    icon: ['project-game-ysf.png', 'project-game-ysf-qqqr.png', 'project-game-ysf-wxqr.png'],
-    age: [2018, '']
+    name: '小游戏合辑3',
+    desc: '翻瓶子3D，漂移碰碰赛车，抢夺大乱斗，最后的英雄',
+    platform: ['微信小游戏', '手Q小游戏', '百度小游戏', '字节跳动小游戏', 'OPPO 小游戏'],
+    icon: ['project-game-bottle-wxqr.jpg', 'project-game-car-wxqr.jpg', 'project-game-football-wxqr.jpg', 'project-game-hero-wxqr.jpg'],
+    age: [2019, '']
   },
   {
-    name: '黑洞大作战吞噬版',
-    desc: '抄袭 VOODOO 黑洞大作战的一个小游戏，做了一些创新。',
+    name: '小游戏合辑2',
+    desc: '街头大乱斗，站桩大作战，单挑篮球，画线大逃亡',
+    platform: ['微信小游戏', '手Q小游戏', '百度小游戏', '字节跳动小游戏', 'OPPO 小游戏'],
+    icon: ['project-game-jt-wxqr.jpg', 'project-game-stake-wxqr.jpg', 'project-game-basketball-wxqr.jpg', 'project-game-line-wxqr.png'],
+    age: [2019, '']
+  },
+  {
+    name: '小游戏合辑1',
+    desc: '黑洞大作战吞噬版，疯狂的球球，疯狂打砖块，萌宠碰一碰',
     platform: ['微信小游戏'],
-    icon: ['project-game-hole.png', 'project-game-hole-qr.png'],
-    age: [2018, '']
+    icon: ['project-game-hole-qr.png', 'project-game-ball-wxqr.jpg', 'project-game-brick-wxqr.jpg', 'project-game-bump-wxqr.jpg'],
+    age: [2018, 2019]
+  },
+  {
+    name: '开心射手',
+    desc: '微信小游戏平台的第一个作品，回合制对战。详细可以阅读我博客上的 [系列文章](https://blog.zengrong.net/tag/youshootfirst/) 。',
+    platform: ['微信小游戏', 'QQ轻游戏'],
+    icon: ['project-game-ysf.png', 'project-game-ysf-wxqr.png'],
+    age: [2018, 2019]
   },
   {
     name: '麻将',
@@ -182,7 +196,7 @@ export default {
     return {
       projectList: [
         {title: '游戏', icon: 'gamepad-variant', detail: GAME},
-        {title: '库', icon: 'library-plus', detail: LIBRARY},
+        {title: '库', icon: 'library-books', detail: LIBRARY},
         {title: '工具', icon: 'toolbox', detail: TOOL}
       ]
     }
