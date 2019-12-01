@@ -18,7 +18,7 @@
         class="is-size-7">
         <span>静态文件存储由</span>
         <a
-          href="https://www.upyun.com/?md=zengrong"
+          href="https://console.upyun.com/register/?invite=HJTT7dvEW"
           target="_blank">又拍云存储</a>
         <span>提供</span>
       </div>
