@@ -91,20 +91,20 @@ const GAME = [
   },
   {
     name: '麻将',
-    desc: '从这个游戏开始转型制作人。负责一部分开发工作。做了五种玩法，发现了团队全栈开发的高效。',
+    desc: '转型制作人。同时负责一部分开发工作。',
     platform: ['HTML5-微信公众平台', 'Android', 'iOS'],
     age: [2016, 2017]
   },
   {
     name: '小小联盟',
-    desc: '一个 MOBA 手游。这个产品立项很早，但中间推倒重来好几次。很遗憾没有上线运营。',
+    desc: '一个 MOBA 手游。这个产品立项很早，但中间推倒重来好几次，错过了融资和发布的时机。',
     platform: ['Cocos2d-X', 'Android', 'iOS'],
     icon: ['project-game-yhq.png'],
     age: [2012, 2014]
   },
   {
     name: '卧龙传',
-    desc: '三国题材的 SLG 手游。第一款手游作品。在中国大陆、香港、台湾、韩国运营。',
+    desc: '三国题材的 SLG 手游。第一次创业时的作品，作为主要开发者参与。在中国大陆、香港、台湾、韩国运营。',
     platform: ['Adobe AIR', 'Android', 'iOS'],
     icon: ['project-game-wlz.png'],
     age: [2010, 2011]
@@ -121,7 +121,7 @@ const TOOL = [
   },
   {
     name: 'Sprite Sheet Editor',
-    desc: 'Sprite Sheet Editor 是一个生成Sprite Sheet(也叫Tile Sheet)的免费工具。',
+    desc: 'Sprite Sheet Editor 是一个生成 Sprite Sheet 的工具，用于自己开发的游戏中。',
     url: 'https://blog.zengrong.net/spritesheeteditor/',
     platform: ['Adobe AIR', 'Windows', 'macOS'],
     age: [2011, 2013]
@@ -174,7 +174,7 @@ const LIBRARY = [
   {
     name: 'AS3 library',
     url: 'https://github.com/zrong/as3',
-    desc: 'Actionscript 3 的封装，用于我的早期游戏开发。',
+    desc: 'Actionscript3 时代的封装，用于页游开发。',
     platform: ['Adobe Flash', 'Adobe AIR', 'Actionscript3'],
     age: [2008, 2013]
   },
