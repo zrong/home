@@ -19,11 +19,10 @@
 </template>
 
 <script>
-import Avatar from '~/components/Avatar.vue'
 import TopMenu from '~/components/TopMenu.vue'
 
 export default {
-  components: {Avatar, TopMenu}
+  components: {TopMenu}
 }
 </script>
 

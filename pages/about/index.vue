@@ -53,11 +53,9 @@
 
 <script>
 import text from './index.md'
-import MainArticle from '~/components/MainArticle.vue'
 
 export default {
   layout: 'page',
-  components: {MainArticle},
   data () {
     return {
       aboutText: text

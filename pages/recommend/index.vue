@@ -1,33 +1,42 @@
 <template>
   <div id="main-article">
-    <h1 class="title">推荐</h1>
+    <h1 class="title">
+      推荐
+    </h1>
     <hr>
     <section
       v-for="(group, i) in recommendList"
       :key="i"
-      class="level">
+      class="level"
+    >
       <figure
-        class="box has-text-centered">
+        class="box has-text-centered"
+      >
         <span class="icon is-large has-text-info">
           <i :class="group.icon" />
         </span>
-        <figcaption class="subtitle is-4 has-text-info">{{ group.title }}</figcaption>
+        <figcaption class="subtitle is-4 has-text-info">
+          {{ group.title }}
+        </figcaption>
       </figure>
       <figure
         v-for="(item, j) in group.detail"
         :key="j"
-        class="level-item">
+        class="level-item"
+      >
         <b-icon
+          class="is-large"
           :icon="item.icon"
-          class="is-large" />
+        />
         <figcaption>
           <a
             v-if="item.url"
             :href="item.url"
             target="_blank"
-            class="subtitle is-5">
+            class="subtitle is-5"
+          >
             {{ item.name }}
-            <b-icon icon="link-variant"/>
+            <b-icon icon="link-variant" />
           </a>
         </figcaption>
       </figure>
