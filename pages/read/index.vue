@@ -84,8 +84,8 @@ export default {
   data () {
     return {
       readingList: [
-        {title: 2020, plan: 200, intensive: 20, note: 1, text: read2020, show: true},
-        {title: 2019, plan: 50, read: 216, note: 0, text: read2019, show: false},
+        {title: 2020, plan: 200, intensive: 20, read:44, note: 1, text: read2020, show: true},
+        {title: 2019, plan: 50, read: 386, note: 0, text: read2019, show: false},
         {title: 2018, plan: 30, read: 198, note: 6, text: read2018, show: false},
         {title: 2017, plan: 30, read: 25, note: 1, text: read2017, show: false},
         {title: 2016, plan: 40, read: 43, note: 3, text: read2016, show: false},
