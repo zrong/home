@@ -1,39 +1,35 @@
 <template>
-  <div :class="[containerClassName]">
+  <div class="container-normal">
     <header>
       <avatar size="large" />
-      <h1 id="index-header-title">ZRONG's HOME</h1>
-      <div class="is-size-7">鄂ICP备05002429号</div>
-      <top-menu
-        ref="topMenu"
-        pos="bottom"
-        @burgerClick="onBurgerClick"/>
+      <h1 id="index-header-title">
+        ZRONG's HOME
+      </h1>
+      <div
+        id="beian"
+        class="is-size-7"
+      >
+        鄂ICP备05002429号
+      </div>
+      <home-menu />
     </header>
   </div>
 </template>
 
 <script>
 import Avatar from '~/components/Avatar.vue'
-import TopMenu from '~/components/TopMenu.vue'
+import HomeMenu from '~/components/HomeMenu.vue'
 
 export default {
   layout: 'home',
   components: {
-    Avatar, TopMenu
+    Avatar, HomeMenu
   },
   data () {
     return {
-      containerClassName: 'container-normal'
     }
   },
   methods: {
-    onBurgerClick(showMenu) {
-      if (showMenu) {
-        this.containerClassName = 'container-top'
-      } else {
-        this.containerClassName = 'container-normal'
-      }
-    }
   }
 }
 </script>
@@ -51,4 +47,8 @@ export default {
   font-size: 2.5rem
   color: #34495e
   text-shadow: 2px 2px rgb(127, 140, 141)
+
+#beian
+  margin-top: -10px
+
 </style>

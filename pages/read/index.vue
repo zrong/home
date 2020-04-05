@@ -38,32 +38,49 @@
             class="control"
           >
             <b-taglist attached>
-              <b-tag type="is-info">已读</b-tag>
-              <b-tag type="is-dark">{{ rt.read }} 本</b-tag>
+              <b-tag type="is-info">
+                已读
+              </b-tag>
+              <b-tag type="is-dark">
+                {{ rt.read }} 本
+              </b-tag>
             </b-taglist>
           </div>
-          <div v-if="rt.intensive" class="control">
+          <div
+            v-if="rt.intensive"
+            class="control"
+          >
             <b-taglist attached>
-              <b-tag type="is-info">精读</b-tag>
-              <b-tag type="is-dark">{{ rt.intensive }} 本</b-tag>
+              <b-tag type="is-info">
+                精读
+              </b-tag>
+              <b-tag type="is-dark">
+                {{ rt.intensive }} 本
+              </b-tag>
             </b-taglist>
           </div>
-          <div v-if="rt.note" class="control">
+          <div
+            v-if="rt.note"
+            class="control"
+          >
             <b-taglist attached>
-              <b-tag type="is-warning">笔记</b-tag>
-              <b-tag type="is-dark">{{ rt.note }} 篇</b-tag>
+              <b-tag type="is-warning">
+                笔记
+              </b-tag>
+              <b-tag type="is-dark">
+                {{ rt.note }} 篇
+              </b-tag>
             </b-taglist>
           </div>
         </b-field>
-        <div
-          v-if="rt.show"
-          class="content" 
-          v-html="rt.text" />
+        <!-- eslint-disable-next-line vue/no-v-html vue/max-attributes-per-line -->
+        <div v-if="rt.show" class="content" v-html="rt.text" />
       </div>
       <b-switch
         v-model="rt.show"
         type="is-info"
-        class="media-right">
+        class="media-right"
+      >
         详细列表
       </b-switch>
       <hr>
@@ -84,7 +101,7 @@ export default {
   data () {
     return {
       readingList: [
-        {title: 2020, plan: 200, intensive: 20, read:55, note: 6, text: read2020, show: true},
+        {title: 2020, plan: 200, intensive: 20, read:59, note: 6, text: read2020, show: true},
         {title: 2019, read: 386, note: 0, text: read2019, show: false},
         {title: 2018, read: 198, note: 6, text: read2018, show: false},
         {title: 2017, read: 25, note: 1, text: read2017, show: false},

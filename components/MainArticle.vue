@@ -1,6 +1,8 @@
 <template>
   <div id="main-article">
-    <h1 class="title">{{ title }}</h1>
+    <h1 class="title">
+      {{ title }}
+    </h1>
     <hr>
     <div v-html="htmlText" />
   </div>

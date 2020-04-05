@@ -1,33 +1,42 @@
 <template>
   <div id="main-article">
-    <h1 class="title">项目</h1>
+    <h1 class="title">
+      项目
+    </h1>
     <hr>
     <article
       v-for="(group, i) in projectList"
       :key="i"
-      class="media">
+      class="media"
+    >
       <figure class="media-left box has-text-centered">
         <b-icon
           :icon="group.icon"
-          size="is-large" />
-        <figcaption class="subtitle is-4">{{ group.title }}</figcaption>
+          size="is-large"
+        />
+        <figcaption class="subtitle is-4">
+          {{ group.title }}
+        </figcaption>
       </figure>
       <div class="media-content">
         <div
           v-for="item in group.detail"
-          :key="item.name">
+          :key="item.name"
+        >
           <div class="block">
             <a
               v-if="item.url"
               :href="item.url"
               target="_blank"
-              class="title is-4">
+              class="title is-4"
+            >
               {{ item.name }}
-              <b-icon icon="link-variant"/>
+              <b-icon icon="link-variant" />
             </a>
             <span
               v-else
-              class="title is-4">
+              class="title is-4"
+            >
               {{ item.name }}
             </span>
             <b-tag type="is-dark">
@@ -36,21 +45,27 @@
           </div>
           <figure
             v-if="item.icon"
-            class="is-flex imageicons block">
+            class="is-flex imageicons block"
+          >
             <img
-              v-for="(icon, i) in item.icon"
-              :key="i"
-              :src="require(`@/assets/${icon}`)">
+              v-for="(icon, iconi) in item.icon"
+              :key="iconi"
+              :src="require(`@/assets/${icon}`)"
+            >
           </figure>
           <div class="tags">
             <span
-              v-for="(tag, i) in item.platform"
-              :key="i"
-              class="tag is-success">
+              v-for="(tag, tagi) in item.platform"
+              :key="tagi"
+              class="tag is-success"
+            >
               {{ tag }}
             </span>
           </div>
-          <div class="notification"><p v-html="$md.render(item.desc)" /></div>
+          <div class="notification">
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <p v-html="$md.render(item.desc)" />
+          </div>
           <hr>
         </div>
       </div>

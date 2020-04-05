@@ -1,16 +1,22 @@
 <template>
   <div id="main-article">
-    <h1 class="title">关于</h1>
+    <h1 class="title">
+      关于
+    </h1>
     <hr>
+    <!-- eslint-disable-next-line vue/no-v-html -->
     <article v-html="aboutText" />
     <hr>
     <nav class="level">
       <div class="level-item has-text-centered">
         <figure>
-          <figcaption class="heading">Jacky 的微信</figcaption>
+          <figcaption class="heading">
+            Jacky 的微信
+          </figcaption>
           <img
             alt="我的微信"
-            src="@/assets/about-wechat-zrongzrong-258.jpg">
+            src="@/assets/about-wechat-zrongzrong-258.jpg"
+          >
         </figure>
       </div>
       <div class="level-item">
@@ -19,13 +25,15 @@
             <b-icon icon="email" />
             <img
               alt="E-mail"
-              src="@/assets/about-email.png">
+              src="@/assets/about-email.png"
+            >
           </figure>
           <figure>
             <b-icon icon="github-circle" />
             <a
               href="https://github.com/zrong/"
-              target="_blank">
+              target="_blank"
+            >
               github.com/zrong
             </a>
           </figure>
@@ -33,7 +41,8 @@
             <b-icon icon="library-books" />
             <a
               href="https://blog.zengrong.net"
-              target="_blank">
+              target="_blank"
+            >
               zrong's blog
             </a>
           </figure>
@@ -41,10 +50,13 @@
       </div>
       <div class="level-item has-text-centered">
         <figure>
-          <figcaption class="heading">公众号：曾嵘胡扯的地方</figcaption>
+          <figcaption class="heading">
+            公众号：曾嵘胡扯的地方
+          </figcaption>
           <img
             alt="公众号：曾嵘胡扯的地方"
-            src="@/assets/about-mp-zrong-net-258.jpg">
+            src="@/assets/about-mp-zrong-net-258.jpg"
+          >
         </figure>
       </div>
     </nav>

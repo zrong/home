@@ -2,24 +2,28 @@
   <div>
     <top-menu pos="top" />
     <hr class="top-menu-hr">
-    <nuxt/>
+    <nuxt />
     <footer class="footer">
       <a
         href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
-        target="_blank">
+        target="_blank"
+      >
         <img
           src="~assets/by-nc-sa-88x31.png"
           alt="CC BY-NC-SA"
           width="88"
-          height="31">
+          height="31"
+        >
       </a>
-      <div class="is-size-7">鄂ICP备05002429号</div>
+      <div class="is-size-7">
+        鄂ICP备05002429号
+      </div>
     </footer>
   </div>
 </template>
 
 <script>
-import TopMenu from '~/components/TopMenu.vue'
+import TopMenu from '~/components/TopMenu2.vue'
 
 export default {
   components: {TopMenu}

@@ -3,7 +3,8 @@
     :class="avatarCls"
     src="https://file.zengrong.net/blog/jacky_icon_120x120.jpg"
     class="avatar"
-    @click="onAvatarClick">
+    @click="onAvatarClick"
+  >
 </template>
 
 <script>

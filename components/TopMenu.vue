@@ -2,22 +2,27 @@
   <nav
     :class="navbarClass"
     class="navbar"
-    role="navigation">
+    role="navigation"
+  >
     <div
       :class="brandClass"
-      class="navbar-brand">
+      class="navbar-brand"
+    >
       <div class="page-title-left">
         <avatar
           v-if="pos === 'top'"
-          size="small" />
+          size="small"
+        />
         <a
           v-if="pos === 'top'"
-          href="/">ZRONG's HOME</a>
+          href="/"
+        >ZRONG's HOME</a>
       </div>
       <button
         :class="{'is-active': showMenus}"
         class="navbar-burger"
-        @click="onBurgerClick">
+        @click="onBurgerClick"
+      >
         <span />
         <span />
         <span />
@@ -25,18 +30,24 @@
     </div>
     <ul
       :class="{'is-active': showMenus}"
-      class="navbar-menu">
+      class="navbar-menu"
+    >
       <li
         v-for="menu in menus"
         :key="menu.name"
-        class="navbar-item is-hoverable">
-        <nuxt-link :to="menu.path">{{ menu.name }}</nuxt-link>
+        class="navbar-item is-hoverable"
+      >
+        <nuxt-link :to="menu.path">
+          {{ menu.name }}
+        </nuxt-link>
       </li>
       <li
-        class="navbar-item">
+        class="navbar-item"
+      >
         <a
           target="_blank"
-          href="https://blog.zengrong.net">
+          href="https://blog.zengrong.net"
+        >
           BLOG
         </a>
       </li>
