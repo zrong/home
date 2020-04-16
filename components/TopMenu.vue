@@ -56,6 +56,8 @@
 </template>
 
 <script>
+// 2020-04-05 弃用
+// 现在使用 TopMenu2.vue
 import Avatar from '~/components/Avatar.vue'
 
 export default {

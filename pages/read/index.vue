@@ -22,7 +22,7 @@
           >
             <b-taglist attached>
               <b-tag
-                type="is-info"
+                type="is-success"
               >
                 计划
               </b-tag>
@@ -34,12 +34,38 @@
             </b-taglist>
           </div>
           <div
+            v-if="rt.total"
+            class="control"
+          >
+            <b-taglist attached>
+              <b-tag type="is-info">
+                总数
+              </b-tag>
+              <b-tag type="is-dark">
+                {{ rt.total }} 本
+              </b-tag>
+            </b-taglist>
+          </div>
+          <div
+            v-if="rt.listen"
+            class="control"
+          >
+            <b-taglist attached>
+              <b-tag type="is-info">
+                听
+              </b-tag>
+              <b-tag type="is-dark">
+                {{ rt.listen }} 本
+              </b-tag>
+            </b-taglist>
+          </div>
+          <div
             v-if="rt.read"
             class="control"
           >
             <b-taglist attached>
               <b-tag type="is-info">
-                已读
+                读
               </b-tag>
               <b-tag type="is-dark">
                 {{ rt.read }} 本
@@ -101,12 +127,12 @@ export default {
   data () {
     return {
       readingList: [
-        {title: 2020, plan: 200, intensive: 20, read:59, note: 6, text: read2020, show: true},
-        {title: 2019, read: 386, note: 0, text: read2019, show: false},
-        {title: 2018, read: 198, note: 6, text: read2018, show: false},
-        {title: 2017, read: 25, note: 1, text: read2017, show: false},
-        {title: 2016, read: 43, note: 3, text: read2016, show: false},
-        {title: 2015, read: 32, note: 5, text: read2015, show: false}
+        {title: 2020, plan: 200, total: 73, intensive: 5, listen: 65, read:3, note: 7, text: read2020, show: true},
+        {title: 2019, total: 386, note: 0, text: read2019, show: false},
+        {title: 2018, total: 198, note: 6, text: read2018, show: false},
+        {title: 2017, total: 25, note: 1, text: read2017, show: false},
+        {title: 2016, total: 43, note: 3, text: read2016, show: false},
+        {title: 2015, total: 32, note: 5, text: read2015, show: false}
       ]
     }
   },
