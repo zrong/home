@@ -127,7 +127,7 @@ export default {
   data () {
     return {
       readingList: [
-        {title: 2020, plan: 200, total: 73, intensive: 5, listen: 65, read:3, note: 7, text: read2020, show: true},
+        {title: 2020, plan: 200, total: 89, intensive: 5, listen: 81, read:3, note: 9, text: read2020, show: true},
         {title: 2019, total: 386, note: 0, text: read2019, show: false},
         {title: 2018, total: 198, note: 6, text: read2018, show: false},
         {title: 2017, total: 25, note: 1, text: read2017, show: false},
