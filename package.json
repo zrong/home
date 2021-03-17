@@ -3,8 +3,8 @@
   "version": "3.0.0",
   "description": "zengrong.net in VuePress",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "dev": "vuepress dev page",
+    "build": "vuepress build page"
   },
   "author": "zrong",
   "license": "GPL-3.0",
