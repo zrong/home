@@ -7,7 +7,9 @@
         关于
       </h1>
       <hr>
+      <section class="content">
       <Content />
+      </section>
       <hr>
       <nav class="level">
         <div class="level-item has-text-centered">

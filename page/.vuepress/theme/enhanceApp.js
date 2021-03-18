@@ -2,7 +2,7 @@ import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 import '@mdi/font/css/materialdesignicons.css'
 
-import VueAnalytics from 'vue-analytics'
+import VueGtag from "vue-gtag"
 
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
@@ -11,7 +11,7 @@ export default ({
   siteData // 站点元数据
 }) => {
   Vue.use(Buefy)
-  Vue.use(VueAnalytics, {
-    id: 'UA-178999-3'
-  })
+  Vue.use(VueGtag, {
+    config: { id: 'UA-178999-3' }
+  }, router)
 }
