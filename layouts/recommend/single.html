@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main id="main-article">
+  <h1>推荐</h1>
+  <hr>
+  {{ range hugo.Data.recommend.groups }}
+  <div class="recommend-group">
+    <div class="recommend-group-header">
+      <span>{{ .icon }}</span>
+      <span>{{ .title }}</span>
+    </div>
+    <div class="recommend-items">
+      {{ range .items }}
+      <div class="recommend-item">
+        <a href="{{ .url }}" target="_blank">{{ .name }} 🔗</a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</main>
+{{ end }}

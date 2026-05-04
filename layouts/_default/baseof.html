@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  {{ $style := resources.Get "css/main.css" | minify }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <script>
+    (function(){
+      var s=localStorage.getItem('theme')||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+      document.documentElement.setAttribute('data-theme',s);
+    })();
+  </script>
+</head>
+<body>
+  {{- partial "header.html" . }}
+  {{- block "main" . }}{{- end }}
+  {{ if not .IsHome }}{{- partial "footer.html" . }}{{ end }}
+  {{- partial "search-modal.html" . }}
+  <script src="/js/main.js"></script>
+</body>
+</html>

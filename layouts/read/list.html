@@ -1,0 +1,20 @@
+{{ define "main" }}
+<main id="main-article">
+  <h1>阅读</h1>
+  <hr>
+  {{ range hugo.Data.reading_stats.years }}
+  <div class="reading-year">
+    <h3>{{ .year }}</h3>
+    <div class="reading-stats">
+      {{ with .plan }}<span class="tags-addons"><span class="tag is-success">计划</span><span class="tag is-dark">{{ . }} 本</span></span>{{ end }}
+      {{ with .total }}<span class="tags-addons"><span class="tag is-info">总数</span><span class="tag is-dark">{{ . }} 本</span></span>{{ end }}
+      {{ with .listen }}<span class="tags-addons"><span class="tag is-info">听</span><span class="tag is-dark">{{ . }} 本</span></span>{{ end }}
+      {{ with .read }}<span class="tags-addons"><span class="tag is-info">读</span><span class="tag is-dark">{{ . }} 本</span></span>{{ end }}
+      {{ with .intensive }}<span class="tags-addons"><span class="tag is-info">精读</span><span class="tag is-dark">{{ . }} 本</span></span>{{ end }}
+      {{ with .note }}<span class="tags-addons"><span class="tag is-warning">笔记</span><span class="tag is-dark">{{ . }} 篇</span></span>{{ end }}
+    </div>
+    <a class="reading-detail-link" href="/read/{{ .year }}/">详情 →</a>
+  </div>
+  {{ end }}
+</main>
+{{ end }}

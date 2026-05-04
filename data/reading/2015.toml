@@ -1,0 +1,289 @@
+year = 2015
+
+[[books]]
+id = 1532
+title = "项目管理十步法"
+url = "https://book.douban.com/subject/1291070/"
+start = "2015-12-23"
+end = ""
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1531
+title = "中国2185"
+url = "https://book.douban.com/subject/24253393/"
+start = "2015-12-15"
+end = "2015-12-18"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1530
+title = "讲故事的人：斯皮尔伯格传"
+url = "https://book.douban.com/subject/26318807/"
+start = "2015-12-01"
+end = "2016-01-26"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1529
+title = "乌合之众——大众心理研究"
+url = "https://book.douban.com/subject/1012611/"
+start = "2015-11-22"
+end = "2015-12-08"
+rating = ""
+note_url = "https://blog.zengrong.net/post/2407.html"
+
+[[books]]
+id = 1528
+title = "超新星纪元"
+url = "https://book.douban.com/subject/3636385/"
+start = "2015-10-27"
+end = "2015-11-04"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1527
+title = "刘慈欣中短篇小说集"
+url = "https://book.douban.com/subject/10767124/"
+start = "2015-10-20"
+end = "2015-10-30"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1526
+title = "沉默的大多数"
+url = "https://book.douban.com/subject/1776683/"
+start = "2015-10-17"
+end = "2016-06-04"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1525
+title = "白银时代"
+url = "https://book.douban.com/subject/1132956/"
+start = "2015-10-15"
+end = "2015-10-16"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1524
+title = "黄金时代"
+url = "https://book.douban.com/subject/3071688/"
+start = "2015-10-14"
+end = "2015-10-14"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1523
+title = "海底两万里"
+url = "https://book.douban.com/subject/1703952/"
+start = "2015-10-10"
+end = "2015-10-30"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1522
+title = "程序员的思维修炼--开发认知潜能的九堂课"
+url = "https://book.douban.com/subject/5372651/"
+start = "2015-09-25"
+end = "2015-10-13"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1521
+title = "绝佳提问--探询改变商业与生活"
+url = "https://book.douban.com/subject/26392294/"
+start = "2015-09-20"
+end = "2015-11-18"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1520
+title = "海狸的记号"
+url = "https://book.douban.com/subject/4710853/"
+start = "2015-09-26"
+end = "2015-09-27"
+rating = ""
+note_url = "https://blog.zengrong.net/post/2370.html"
+
+[[books]]
+id = 1519
+title = "风雨独立路--李光耀回忆录（1923-1965）"
+url = "https://book.douban.com/subject/1082102/"
+start = "2015-08-30"
+end = "2015-09-30"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1518
+title = "TypeScript Handbook"
+url = "http://www.typescriptlang.org/Handbook"
+start = "2015-08-05"
+end = "2015-08-06"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1517
+title = "Android 编程权威指南"
+url = "https://book.douban.com/subject/25848404/"
+start = "2015-07-05"
+end = ""
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1516
+title = "CSS 禅意花园"
+url = "https://book.douban.com/subject/2052176/"
+start = "2015-07-01"
+end = "2015-07-03"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1515
+title = "无懈可击的 Web 设计"
+url = "https://book.douban.com/subject/10733265/"
+start = "2015-06-29"
+end = "2015-06-30"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1514
+title = "Python Cookbook(第3版)"
+url = "https://book.douban.com/subject/26381341/"
+start = "2015-06-22"
+end = ""
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1513
+title = "清醒思考的艺术"
+url = "https://book.douban.com/subject/20492550/"
+start = "2015-06-17"
+end = "2015-06-22"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1512
+title = "硬派健身"
+url = "https://book.douban.com/subject/26359758/"
+start = "2015-06-12"
+end = "2015-06-14"
+rating = ""
+note_url = "https://blog.zengrong.net/post/2328.html"
+
+[[books]]
+id = 1511
+title = "《三体》中的物理学"
+url = "https://book.douban.com/subject/26352270/"
+start = "2015-06-11"
+end = "2015-07-29"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1510
+title = "从0到1"
+url = "https://book.douban.com/subject/26297606/"
+start = "2015-06-08"
+end = "2015-06-16"
+rating = ""
+note_url = "https://blog.zengrong.net/post/2333.html"
+
+[[books]]
+id = 1509
+title = "Cocos2d-x by Example Beginner's Guide Second Edition"
+url = "https://www.packtpub.com/game-development/cocos2d-x-example-beginners-guide-second-edition"
+start = "2015-05-01"
+end = ""
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1508
+title = "告诉你外语学习的真实方法及误区分析"
+url = "http://bbs.tianya.cn/post-english-121795-1.shtml"
+start = "2015-04-22"
+end = "2015-05-01"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1507
+title = "Flask Web开发"
+url = "https://book.douban.com/subject/26274202/"
+start = "2015-04-07"
+end = "2015-04-15"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1506
+title = "HTML5程序设计（第2版）"
+url = "https://book.douban.com/subject/10608238/"
+start = "2015-03-27"
+end = "2015-04-04"
+rating = ""
+note_url = "https://blog.zengrong.net/post/2274.html"
+
+[[books]]
+id = 1505
+title = "时间之墟"
+url = "https://book.douban.com/subject/24935042/"
+start = "2015-03-15"
+end = "2015-03-21"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1504
+title = "浪潮之巅"
+url = "https://book.douban.com/subject/6709783/"
+start = "2015-03-14"
+end = "2015-05-27"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1503
+title = "永恒的终结"
+url = "https://book.douban.com/subject/25829693/"
+start = "2015-03-13"
+end = "2015-03-13"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1502
+title = "世界简史"
+url = "https://book.douban.com/subject/10485421/"
+start = "2015-02-01"
+end = "2015-03-12"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 1501
+title = "HTTP 权威指南"
+url = "https://book.douban.com/subject/10746113/"
+start = "2015-01-03"
+end = "2015-03-02"
+rating = ""
+note_url = ""

@@ -1,0 +1,42 @@
+baseURL = "https://zengrong.net/"
+disableKinds = ["taxonomy", "term"]
+languageCode = "zh-CN"
+defaultContentLanguage = "zh-cn"
+title = "ZRONG's HOME"
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[[menu.main]]
+  name = "阅读"
+  url = "/read/"
+  weight = 1
+
+[[menu.main]]
+  name = "生涯"
+  url = "/career/"
+  weight = 2
+
+[[menu.main]]
+  name = "推荐"
+  url = "/recommend/"
+  weight = 3
+
+[[menu.main]]
+  name = "关于"
+  url = "/about/"
+  weight = 4
+
+[[menu.main]]
+  name = "BLOG"
+  url = "https://blog.zengrong.net"
+  weight = 5
+
+[params]
+  author = "zrong"
+  beian = "鄂ICP备05002429号-1"
+  beianURL = "https://beian.miit.gov.cn/"
+  avatar = "/jacky_icon_120x120.jpg"

@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{ $year := .Params.year | string }}
+{{ $data := index hugo.Data.reading $year }}
+<main id="main-article">
+  <h1>{{ .Title }}</h1>
+  <p><a href="/read/">← 返回阅读列表</a></p>
+  <hr>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>编号</th>
+          <th>书名</th>
+          <th>开始</th>
+          <th>结束</th>
+          {{ if eq $year "2019" }}<th>方式</th>{{ else }}<th>评分</th>{{ end }}
+        </tr>
+      </thead>
+      <tbody>
+        {{ range $data.books }}
+        <tr>
+          <td>{{ .id }}</td>
+          <td>{{ if .url }}<a href="{{ .url }}" target="_blank">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</td>
+          <td>{{ .start }}</td>
+          <td>{{ .end }}</td>
+          {{ if eq $year "2019" }}
+          <td>{{ .method }}</td>
+          {{ else }}
+          <td>{{ .rating }}{{ if .note_url }} <a href="{{ .note_url }}" target="_blank">📝</a>{{ end }}</td>
+          {{ end }}
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+</main>
+{{ end }}

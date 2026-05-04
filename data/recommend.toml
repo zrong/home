@@ -1,0 +1,19 @@
+[[groups]]
+title = "原创文章"
+icon = "✏️"
+
+  [[groups.items]]
+  name = "选择系列"
+  url = "https://blog.zengrong.net/tag/choice/"
+
+  [[groups.items]]
+  name = "管理系列"
+  url = "https://blog.zengrong.net/tag/management/"
+
+  [[groups.items]]
+  name = "读书笔记"
+  url = "https://blog.zengrong.net/tag/reading/"
+
+  [[groups.items]]
+  name = "学习系列"
+  url = "https://blog.zengrong.net/tag/study/"

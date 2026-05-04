@@ -1,0 +1,26 @@
+{{ define "main" }}
+<main id="main-article">
+  <h1>关于</h1>
+  <hr>
+  <section>
+    {{ .Content }}
+  </section>
+  <hr>
+  <div class="contact-grid">
+    <div class="contact-item">
+      <figcaption>Jacky 的微信</figcaption>
+      <img src="/about-wechat-zrongzrong-258.jpg" alt="微信">
+    </div>
+    <div class="contact-item">
+      <figure><img src="/about-email.png" alt="E-mail" style="max-width:200px;"></figure>
+      <figure><img src="/about-gmail.png" alt="Gmail" style="max-width:200px;"></figure>
+      <p><a href="https://github.com/zrong/" target="_blank">github.com/zrong</a></p>
+      <p><a href="https://blog.zengrong.net" target="_blank">zrong's blog</a></p>
+    </div>
+    <div class="contact-item">
+      <figcaption>公众号：曾嵘胡扯的地方</figcaption>
+      <img src="/about-mp-zrong-net-258.jpg" alt="公众号">
+    </div>
+  </div>
+</main>
+{{ end }}

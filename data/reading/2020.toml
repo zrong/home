@@ -1,0 +1,1981 @@
+year = 2020
+
+[[books]]
+id = 20191
+title = "自驱型成长"
+url = ""
+start = "2020-07-05"
+end = "2020-07-05"
+method = "听"
+rating = "5"
+note_url = "https://blog.zengrong.net/post/weekread202028/#heading-2"
+
+[[books]]
+id = 20190
+title = "巨兽"
+url = ""
+start = "2020-07-03"
+end = "2020-07-03"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20189
+title = "法老的宝藏"
+url = ""
+start = "2020-07-02"
+end = "2020-07-02"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20188
+title = "造星主"
+url = ""
+start = "2020-07-01"
+end = ""
+method = "读"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20187
+title = "陌生人效应"
+url = ""
+start = "2020-07-01"
+end = "2020-07-01"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20186
+title = "缘缘堂随笔"
+url = ""
+start = "2020-06-30"
+end = "2020-06-30"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20185
+title = "如何成为一个运营大牛"
+url = ""
+start = "2020-06-29"
+end = ""
+method = "读"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20184
+title = "过敏大流行"
+url = ""
+start = "2020-06-29"
+end = "2020-06-29"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20183
+title = "中央帝国的哲学密码"
+url = ""
+start = "2020-06-28"
+end = "2020-06-28"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20182
+title = "奇点遗民"
+url = ""
+start = "2020-06-24"
+end = "2020-07-03"
+method = "读"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20181
+title = "征服"
+url = ""
+start = "2020-06-24"
+end = "2020-06-24"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20180
+title = "天下的当代性"
+url = ""
+start = "2020-06-22"
+end = "2020-06-22"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20179
+title = "中国货币史"
+url = ""
+start = "2020-06-20"
+end = "2020-06-20"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20178
+title = "人人都该懂的工程学"
+url = ""
+start = "2020-06-19"
+end = "2020-06-19"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20177
+title = "余下只有噪音"
+url = ""
+start = "2020-06-18"
+end = "2020-06-18"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20176
+title = "孟德尔妖"
+url = ""
+start = "2020-06-17"
+end = "2020-06-17"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20175
+title = "态度改变与社会影响"
+url = ""
+start = "2020-06-17"
+end = "2020-06-17"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20174
+title = "克尔凯郭尔传"
+url = ""
+start = "2020-06-15"
+end = "2020-06-15"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20173
+title = "茶花女"
+url = ""
+start = "2020-06-13"
+end = "2020-06-13"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20172
+title = "秦俑两千年"
+url = ""
+start = "2020-06-12"
+end = "2020-06-12"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20171
+title = "终极失控"
+url = ""
+start = "2020-06-12"
+end = "2020-06-18"
+method = "读"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20170
+title = "爱，金钱和孩子"
+url = ""
+start = "2020-06-11"
+end = "2020-06-11"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20169
+title = "锦衣卫"
+url = ""
+start = "2020-06-06"
+end = "2020-06-06"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20168
+title = "卡特制造"
+url = ""
+start = "2020-06-05"
+end = "2020-06-05"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20167
+title = "我问宇航员"
+url = ""
+start = "2020-06-04"
+end = "2020-06-04"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20166
+title = "叙事经济学"
+url = ""
+start = "2020-06-03"
+end = "2020-06-03"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20165
+title = "好父母的说话之道"
+url = ""
+start = "2020-06-02"
+end = "2020-06-02"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20164
+title = "即兴"
+url = ""
+start = "2020-06-01"
+end = "2020-06-01"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20163
+title = "醉步男"
+url = ""
+start = "2020-06-01"
+end = "2020-06-01"
+method = "读"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20162
+title = "阿城作品典藏（二十周年纪念版共四册）"
+url = ""
+start = "2020-05-30"
+end = "2020-06-01"
+method = "读"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20162
+title = "思想录"
+url = ""
+start = "2020-05-29"
+end = "2020-05-29"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20161
+title = "这世上的偶然"
+url = ""
+start = "2020-05-28"
+end = "2020-05-29"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20160
+title = "尼科洛的微笑：马基雅维利传"
+url = ""
+start = "2020-05-27"
+end = "2020-05-27"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20159
+title = "海盗共和国"
+url = ""
+start = "2020-05-27"
+end = "2020-05-27"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20158
+title = "狼厅"
+url = ""
+start = "2020-05-27"
+end = "2020-05-27"
+method = "听"
+rating = "2"
+note_url = ""
+
+[[books]]
+id = 20157
+title = "数学与人类文明"
+url = ""
+start = "2020-05-27"
+end = "2020-05-27"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20156
+title = "吴宓与陈寅格"
+url = ""
+start = "2020-05-27"
+end = "2020-05-27"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20155
+title = "为什么有的国家富裕，有的国家贫穷"
+url = ""
+start = "2020-05-27"
+end = "2020-05-27"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20154
+title = "宋仁宗"
+url = ""
+start = "2020-05-27"
+end = "2020-05-27"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20153
+title = "系统思考"
+url = ""
+start = "2020-05-26"
+end = "2020-05-26"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20152
+title = "你要如何衡量你的人生"
+url = ""
+start = "2020-05-26"
+end = "2020-05-26"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20151
+title = "卓有成效的组织"
+url = ""
+start = "2020-05-25"
+end = "2020-05-25"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20150
+title = "魔鬼的晚餐"
+url = ""
+start = "2020-05-25"
+end = "2020-05-25"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20149
+title = "奈飞文化手册"
+url = ""
+start = "2020-05-13"
+end = "2020-05-19"
+method = "精读+读书会"
+rating = "5"
+note_url = "https://blog.zengrong.net/post/powerful-building-a-culture-of-freedom-and-responsibility/"
+
+[[books]]
+id = 20148
+title = "启功口述历史"
+url = ""
+start = "2020-05-23"
+end = "2020-05-23"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20147
+title = "细节"
+url = ""
+start = "2020-05-22"
+end = "2020-05-22"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20146
+title = "大历史视野"
+url = ""
+start = "2020-05-22"
+end = "2020-05-22"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20145
+title = "城市与压力"
+url = ""
+start = "2020-05-22"
+end = "2020-05-22"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20144
+title = "利维坦的诞生"
+url = ""
+start = "2020-05-22"
+end = "2020-05-22"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20143
+title = "世界观"
+url = ""
+start = "2020-05-22"
+end = "2020-05-22"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20142
+title = "论民主"
+url = ""
+start = "2020-05-22"
+end = "2020-05-22"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20141
+title = "作为意志与表象的世界"
+url = ""
+start = "2020-05-21"
+end = "2020-05-21"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20140
+title = "白板"
+url = ""
+start = "2020-05-20"
+end = "2020-05-20"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20139
+title = "故事力"
+url = ""
+start = "2020-05-20"
+end = "2020-05-20"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20138
+title = "美利坚共和国的衰落"
+url = ""
+start = "2020-05-19"
+end = "2020-05-19"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20137
+title = "强社会与弱国家"
+url = ""
+start = "2020-05-18"
+end = "2020-05-18"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20136
+title = "寻访行家"
+url = ""
+start = "2020-05-18"
+end = "2020-05-18"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20135
+title = "天才与算法"
+url = ""
+start = "2020-05-18"
+end = "2020-05-18"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20134
+title = "魔鬼的晚餐"
+url = ""
+start = "2020-05-17"
+end = "2020-05-17"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20133
+title = "怎样解题"
+url = ""
+start = "2020-05-16"
+end = "2020-05-16"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20132
+title = "书读完了"
+url = ""
+start = "2020-05-15"
+end = "2020-05-15"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20131
+title = "积极的力量"
+url = ""
+start = "2020-05-15"
+end = "2020-05-15"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20130
+title = "谁是美国人"
+url = ""
+start = "2020-05-15"
+end = "2020-05-15"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20129
+title = "战争史"
+url = ""
+start = "2020-05-15"
+end = "2020-05-15"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20128
+title = "如何实现有效社交"
+url = ""
+start = "2020-05-14"
+end = "2020-05-14"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20127
+title = "如何打造你的独特观点"
+url = ""
+start = "2020-05-14"
+end = "2020-05-14"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20126
+title = "罪恶之城的骑士"
+url = ""
+start = "2020-05-14"
+end = "2020-05-14"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20125
+title = "中国文明起源新探"
+url = ""
+start = "2020-05-13"
+end = "2020-05-13"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20124
+title = "蜥蜴脑法则"
+url = ""
+start = "2020-05-13"
+end = "2020-05-13"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20123
+title = "月亮和六便士"
+url = ""
+start = "2020-05-13"
+end = "2020-05-13"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20122
+title = "决断力"
+url = ""
+start = "2020-05-13"
+end = "2020-05-13"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20121
+title = "好的经济学"
+url = ""
+start = "2020-05-13"
+end = "2020-05-13"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20120
+title = "东印度公司"
+url = ""
+start = "2020-05-12"
+end = "2020-05-12"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20119
+title = "像间谍一样观察"
+url = ""
+start = "2020-05-12"
+end = "2020-05-12"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20118
+title = "护士的故事"
+url = ""
+start = "2020-05-12"
+end = "2020-05-12"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20117
+title = "拉丁美洲被切开的血管"
+url = ""
+start = "2020-05-11"
+end = "2020-05-11"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20116
+title = "学校如何运转"
+url = ""
+start = "2020-05-11"
+end = "2020-05-11"
+method = "听"
+rating = "5"
+note_url = "https://blog.zengrong.net/post/how-a-school-works/"
+
+[[books]]
+id = 20115
+title = "像间谍一样观察"
+url = ""
+start = "2020-05-12"
+end = "2020-05-12"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20114
+title = "护士的故事"
+url = ""
+start = "2020-05-12"
+end = "2020-05-12"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20113
+title = "拉丁美洲被切开的血管"
+url = ""
+start = "2020-05-11"
+end = "2020-05-11"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20112
+title = "学校如何运转"
+url = ""
+start = "2020-05-11"
+end = "2020-05-11"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20111
+title = "混乱的猴子"
+url = ""
+start = "2020-05-10"
+end = "2020-05-10"
+method = "听"
+rating = "2"
+note_url = ""
+
+[[books]]
+id = 20110
+title = "天才雷普利"
+url = ""
+start = "2020-05-09"
+end = "2020-05-09"
+method = "听"
+rating = "5+"
+note_url = ""
+
+[[books]]
+id = 20109
+title = "智识分子"
+url = ""
+start = "2020-05-09"
+end = "2020-05-09"
+method = "听"
+rating = "5+"
+note_url = ""
+
+[[books]]
+id = 20108
+title = "理智与情感"
+url = ""
+start = "2020-05-09"
+end = "2020-05-09"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20107
+title = "天才主厨的绝对温度"
+url = ""
+start = "2020-05-08"
+end = "2020-05-08"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20106
+title = "历史的教训"
+url = ""
+start = "2020-05-08"
+end = "2020-05-08"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20105
+title = "解读中国经济"
+url = ""
+start = "2020-05-07"
+end = "2020-05-07"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20105
+title = "快速阅读"
+url = ""
+start = "2020-05-07"
+end = "2020-05-07"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20105
+title = "规模"
+url = ""
+start = "2020-05-07"
+end = "2020-05-07"
+method = "听"
+rating = "5+"
+note_url = ""
+
+[[books]]
+id = 20104
+title = "女性脑"
+url = ""
+start = "2020-05-06"
+end = "2020-05-06"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20103
+title = "苏世民：我的经验和教训"
+url = ""
+start = "2020-05-06"
+end = "2020-05-06"
+method = "听"
+rating = "5+"
+note_url = ""
+
+[[books]]
+id = 20102
+title = "成功演讲的秘密"
+url = ""
+start = "2020-05-05"
+end = "2020-05-05"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20101
+title = "销售洗脑"
+url = ""
+start = "2020-05-05"
+end = "2020-05-05"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20101
+title = "情绪"
+url = ""
+start = "2020-05-05"
+end = "2020-05-05"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20100
+title = "维多利亚女王"
+url = ""
+start = "2020-05-05"
+end = "2020-05-05"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20099
+title = "千亿个太阳"
+url = ""
+start = "2020-05-04"
+end = "2020-05-04"
+method = "听"
+rating = "5"
+note_url = "https://blog.zengrong.net/post/weekread202022/#heading"
+
+[[books]]
+id = 20098
+title = "历史上最伟大的思想"
+url = ""
+start = "2020-05-02"
+end = "2020-05-02"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20097
+title = "叫魂"
+url = ""
+start = "2020-05-01"
+end = "2020-05-01"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20096
+title = "逆商"
+url = ""
+start = "2020-05-01"
+end = "2020-05-01"
+method = "听"
+rating = "5+"
+note_url = ""
+
+[[books]]
+id = 20096
+title = "隐藏的自我"
+url = ""
+start = "2020-04-30"
+end = "2020-04-30"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20095
+title = "在西方的目光下"
+url = ""
+start = "2020-04-30"
+end = "2020-04-30"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20094
+title = "红与黑"
+url = ""
+start = "2020-04-30"
+end = "2020-04-30"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20093
+title = "一生的旅程"
+url = ""
+start = "2020-04-30"
+end = "2020-04-30"
+method = "听"
+rating = "5"
+note_url = "https://blog.zengrong.net/post/weekread202018/#heading-4"
+
+[[books]]
+id = 20092
+title = "讲谈社世界史9：东印度公司与亚洲之海"
+url = ""
+start = "2020-04-29"
+end = "2020-04-29"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20091
+title = "自行车：自由之轮"
+url = ""
+start = "2020-04-28"
+end = "2020-04-28"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20090
+title = "马背上朝廷"
+url = ""
+start = "2020-04-28"
+end = "2020-04-28"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20089
+title = "幽暗国度"
+url = ""
+start = "2020-04-27"
+end = "2020-04-27"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20088
+title = "思维力"
+url = ""
+start = "2020-04-27"
+end = "2020-04-27"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20087
+title = "被讨厌的勇气"
+url = ""
+start = "2020-04-27"
+end = "2020-04-27"
+method = "听"
+rating = "5"
+note_url = "https://blog.zengrong.net/post/weekread202018/#heading"
+
+[[books]]
+id = 20086
+title = "神经的逻辑"
+url = ""
+start = "2020-04-26"
+end = "2020-04-26"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20085
+title = "天堂的电脑"
+url = ""
+start = "2020-04-25"
+end = "2020-04-25"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20084
+title = "不能承受的生命之轻"
+url = ""
+start = "2020-04-24"
+end = "2020-04-24"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20083
+title = "瘟疫与人"
+url = ""
+start = "2020-04-24"
+end = "2020-04-24"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20082
+title = "铃木大拙禅学入门"
+url = ""
+start = "2020-04-24"
+end = "2020-04-24"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20081
+title = "韩国综艺节目如何讲故事"
+url = ""
+start = "2020-04-24"
+end = "2020-04-24"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20080
+title = "从 0 到 Zara"
+url = ""
+start = "2020-04-21"
+end = "2020-04-21"
+method = "听"
+rating = "5"
+note_url = "https://blog.zengrong.net/post/weekread202017/#21"
+
+[[books]]
+id = 20079
+title = "风格感觉"
+url = ""
+start = "2020-04-22"
+end = "2020-04-22"
+method = "听"
+rating = "5"
+note_url = "https://blog.zengrong.net/post/weekread202017/#-0--zara"
+
+[[books]]
+id = 20078
+title = "智能商业"
+url = ""
+start = "2020-04-21"
+end = "2020-04-21"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20077
+title = "你的幸福曲线"
+url = ""
+start = "2020-04-20"
+end = "2020-04-20"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20076
+title = "书上的男爵"
+url = ""
+start = "2020-04-19"
+end = "2020-04-19"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20075
+title = "韩剧如何讲故事"
+url = ""
+start = "2020-04-17"
+end = "2020-04-17"
+method = "听"
+rating = "4"
+note_url = "https://blog.zengrong.net/post/weekread202016/#heading-1"
+
+[[books]]
+id = 20074
+title = "赞扬与责备"
+url = ""
+start = "2020-04-16"
+end = "2020-04-16"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20073
+title = "权利话语"
+url = ""
+start = "2020-04-15"
+end = "2020-04-15"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20072
+title = "讲谈社世界史6：东南亚"
+url = ""
+start = "2020-04-14"
+end = "2020-04-14"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20071
+title = "意会时刻"
+url = ""
+start = "2020-04-13"
+end = "2020-04-13"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20070
+title = "走出非洲"
+url = ""
+start = "2020-04-13"
+end = "2020-04-13"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20069
+title = "三国演义的世界"
+url = ""
+start = "2020-04-13"
+end = "2020-04-13"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20068
+title = "九章集"
+url = ""
+start = "2020-04-11"
+end = "2020-04-11"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20067
+title = "动画人生：迪士尼传"
+url = ""
+start = "2020-04-10"
+end = "2020-04-10"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20066
+title = "大转型"
+url = ""
+start = "2020-04-09"
+end = "2020-04-09"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20065
+title = "世界的误算3：永生之惑"
+url = ""
+start = "2020-04-08"
+end = "2020-04-11"
+method = "读"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20064
+title = "简介启发式"
+url = ""
+start = "2020-04-08"
+end = "2020-04-08"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20063
+title = "暗黑之门"
+url = ""
+start = "2020-04-07"
+end = "2020-04-07"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20062
+title = "烧钱"
+url = ""
+start = "2020-04-06"
+end = "2020-04-06"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20061
+title = "说书人与梦工厂"
+url = ""
+start = "2020-04-04"
+end = "2020-04-04"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20060
+title = "世界的误算2：生而为人"
+url = ""
+start = "2020-04-03"
+end = "2020-04-08"
+method = "读"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20059
+title = "世界的误算：完美缺陷"
+url = ""
+start = "2020-03-29"
+end = "2020-04-03"
+method = "读"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20058
+title = "你当像鸟飞往你的山"
+url = ""
+start = "2020-04-03"
+end = "2020-04-03"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20057
+title = "治大国"
+url = ""
+start = "2020-04-02"
+end = "2020-04-02"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20056
+title = "废品生活"
+url = ""
+start = "2020-04-01"
+end = "2020-04-01"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20055
+title = "黑匣子思维"
+url = ""
+start = "2020-03-28"
+end = "2020-03-28"
+method = "听"
+rating = "5"
+note_url = "https://blog.zengrong.net/post/weekread202015/#heading-1"
+
+[[books]]
+id = 20054
+title = "冥王星沉浮记"
+url = ""
+start = "2020-03-26"
+end = "2020-03-26"
+method = "听"
+rating = "5"
+note_url = "https://blog.zengrong.net/post/weekread202014/#heading-1"
+
+[[books]]
+id = 20053
+title = "绩效管理全流程实战方案"
+url = ""
+start = "2020-03-10"
+end = "2020-03-25"
+method = "精读"
+rating = "5"
+note_url = "https://blog.zengrong.net/post/reading-notes-jxglqlc/"
+
+[[books]]
+id = 20052
+title = "管理的实践"
+url = ""
+start = "2020-03-18"
+end = "2020-03-18"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20051
+title = "流媒体时代"
+url = ""
+start = "2020-03-18"
+end = "2020-03-18"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20050
+title = "讲谈社世界史7：近代欧洲的霸权"
+url = ""
+start = "2020-03-15"
+end = "2020-03-16"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20049
+title = "OKR 工作法：谷歌、领英等公司的高绩效秘籍"
+url = ""
+start = "2020-03-16"
+end = "2020-03-17"
+method = "精读"
+rating = "5"
+note_url = "https://blog.zengrong.net/post/reading-notes-radical-focus/"
+
+[[books]]
+id = 20048
+title = "这就是 OKR：让谷歌、亚马逊实现爆炸性增长的工作法"
+url = ""
+start = "2020-03-10"
+end = "2020-03-12"
+method = "精读"
+rating = "4"
+note_url = "https://blog.zengrong.net/post/reading-notes-measure-what-matters/"
+
+[[books]]
+id = 20047
+title = "南极洲"
+url = ""
+start = "2020-03-08"
+end = "2020-03-08"
+method = "听"
+rating = "4"
+note_url = "https://blog.zengrong.net/post/weekread202011/#heading-16"
+
+[[books]]
+id = 20046
+title = "这就是 OKR"
+url = ""
+start = "2020-03-05"
+end = "2020-03-08"
+method = "精读"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20045
+title = "有限和无限的游戏"
+url = ""
+start = "2020-03-03"
+end = ""
+method = "精读+读书会"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20044
+title = "童年的秘密"
+url = ""
+start = "2020-01-02"
+end = "2020-01-02"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20043
+title = "人生十二法则"
+url = ""
+start = "2020-01-03"
+end = "2020-01-03"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20042
+title = "温暖的孩子"
+url = ""
+start = "2020-01-04"
+end = "2020-01-04"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20041
+title = "符号侦探"
+url = ""
+start = "2020-01-06"
+end = "2020-01-06"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20040
+title = "空荡荡的地球"
+url = ""
+start = "2020-01-07"
+end = "2020-01-07"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20039
+title = "脑与阅读"
+url = ""
+start = "2020-01-07"
+end = "2020-01-07"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20038
+title = "丰田传"
+url = ""
+start = "2020-01-08"
+end = "2020-01-08"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20037
+title = "火与怒：特朗普白宫内幕"
+url = ""
+start = "2020-01-09"
+end = "2020-01-09"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20036
+title = "医疗与帝国"
+url = ""
+start = "2020-01-09"
+end = "2020-01-09"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20035
+title = "巴西：未来之国"
+url = ""
+start = "2020-01-09"
+end = "2020-01-09"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20034
+title = "非理性繁荣"
+url = ""
+start = "2020-01-09"
+end = "2020-01-09"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20033
+title = "国王与诸神"
+url = ""
+start = "2020-01-10"
+end = "2020-01-10"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20032
+title = "债务和魔鬼"
+url = ""
+start = "2020-01-10"
+end = "2020-01-10"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20031
+title = "费马大定理"
+url = ""
+start = "2020-01-10"
+end = "2020-01-10"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20030
+title = "太阳全书"
+url = ""
+start = "2020-01-13"
+end = "2020-01-13"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20029
+title = "穿越寒冬"
+url = ""
+start = "2020-01-14"
+end = "2020-01-14"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20028
+title = "吃货的生物学修养"
+url = ""
+start = "2020-01-15"
+end = "2020-01-15"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20027
+title = "以眼还眼"
+url = ""
+start = "2020-01-16"
+end = "2020-01-16"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20026
+title = "燃烧的远征"
+url = ""
+start = "2020-01-16"
+end = "2020-01-16"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20025
+title = "自由主义"
+url = ""
+start = "2020-01-17"
+end = "2020-01-17"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20024
+title = "习惯的力量"
+url = ""
+start = "2020-01-17"
+end = "2020-01-18"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20023
+title = "混沌"
+url = ""
+start = "2020-01-18"
+end = "2020-01-18"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20023
+title = "其妙的尘埃"
+url = ""
+start = "2020-01-18"
+end = "2020-01-18"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20022
+title = "不可能的物理"
+url = ""
+start = "2020-01-19"
+end = "2020-01-19"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20021
+title = "运动基因"
+url = ""
+start = "2020-01-20"
+end = "2020-01-20"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20020
+title = "爆款"
+url = ""
+start = "2020-01-20"
+end = "2020-01-20"
+method = "听"
+rating = ""
+note_url = ""
+
+[[books]]
+id = 20019
+title = "法律人的思维方式"
+url = ""
+start = "2020-01-20"
+end = "2020-01-20"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20018
+title = "讲谈社世界史1：亚历山大的征服与神话"
+url = ""
+start = "2020-01-22"
+end = "2020-01-22"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20017
+title = "论平等"
+url = ""
+start = "2020-01-24"
+end = "2020-01-24"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20016
+title = "北京风俗图谱"
+url = ""
+start = "2020-01-30"
+end = "2020-01-30"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20015
+title = "文案的基本修养"
+url = ""
+start = "2020-02-01"
+end = "2020-02-01"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20014
+title = "出类拔萃之辈"
+url = ""
+start = "2020-02-02"
+end = "2020-02-02"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20013
+title = "警察"
+url = ""
+start = "2020-02-06"
+end = "2020-02-06"
+method = "听"
+rating = "5"
+note_url = ""
+
+[[books]]
+id = 20013
+title = "茶在中国"
+url = ""
+start = "2020-02-08"
+end = "2020-02-08"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20012
+title = "道德与市场：美国人寿保险的发展"
+url = ""
+start = "2020-02-09"
+end = "2020-02-09"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20011
+title = "罗马盛衰原因论"
+url = ""
+start = "2020-02-12"
+end = "2020-02-12"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20010
+title = "广场与高塔"
+url = ""
+start = "2020-02-13"
+end = "2020-02-13"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20009
+title = "讲谈社世界史4：蒙古帝国与其漫长的后世"
+url = ""
+start = "2020-02-14"
+end = "2020-02-14"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20008
+title = "鼠疫"
+url = ""
+start = "2020-02-18"
+end = "2020-02-18"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20007
+title = "恐惧"
+url = ""
+start = "2020-02-16"
+end = "2020-02-16"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20006
+title = "古怪的身体：时尚是什么"
+url = ""
+start = "2020-02-23"
+end = "2020-02-23"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20005
+title = "用户增长方法论"
+url = ""
+start = "2020-02-25"
+end = "2020-02-25"
+method = "听"
+rating = "3"
+note_url = ""
+
+[[books]]
+id = 20004
+title = "赶往火星"
+url = ""
+start = "2020-02-27"
+end = "2020-02-27"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20003
+title = "上帝之城"
+url = ""
+start = "2020-03-01"
+end = "2020-03-02"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20002
+title = "情绪"
+url = ""
+start = "2020-03-03"
+end = "2020-03-03"
+method = "听"
+rating = "4"
+note_url = ""
+
+[[books]]
+id = 20001
+title = "俞军产品方法论"
+url = ""
+start = "2020-01-31"
+end = "2020-02-20"
+method = "精读+读书会"
+rating = "4"
+note_url = "https://blog.zengrong.net/post/reading-notes-yujun/"

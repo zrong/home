@@ -1,0 +1,27 @@
+<nav class="navbar{{ if not .IsHome }} is-fixed-top{{ end }}" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    {{ if not .IsHome }}
+    <a class="navbar-item navbar-home-link" href="/">
+      <img class="avatar avatar-small" src="{{ .Site.Params.avatar }}" alt="avatar">
+      <span>ZRONG's HOME</span>
+    </a>
+    {{ end }}
+    <button class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="navbar-menu" id="navMenu">
+    <div class="navbar-start">
+      {{ range .Site.Menus.main }}
+      <a class="navbar-item" href="{{ .URL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </div>
+    <div class="navbar-end">
+      <a class="navbar-item" id="search-btn" title="搜索 (⌘K)" style="cursor:pointer;">🔍</a>
+      <a class="navbar-item" id="theme-toggle" title="切换明暗模式" style="cursor:pointer;">🌙</a>
+    </div>
+  </div>
+</nav>
+{{ if not .IsHome }}<div class="top-menu-spacer"></div>{{ end }}
