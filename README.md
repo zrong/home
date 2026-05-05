@@ -4,17 +4,17 @@
 
 ## 构建与部署
 
-需要 Hugo Extended >= 0.158.0。
+需要 Hugo Extended >= 0.158.0 和 [just](https://github.com/casey/just)。
 
 ```bash
 # 本地预览
-hugo server
+just dev
 
 # 构建
-hugo
+just build
 
 # 构建并部署
-make deploy
+just deploy
 # 等价于：
 # hugo && rsync -avz --delete public/ ubuntu@zengrong-net:/srv/www/zengrong.net
 ```
@@ -22,7 +22,7 @@ make deploy
 更新 aid 搜索索引（部署后可选）：
 
 ```bash
-AID_TOKEN=<your-token> bash tools/push_index.sh
+AID_TOKEN=<your-token> just push-index
 ```
 
 ## [zengrong.net](https://zengrong.net) 的历史
