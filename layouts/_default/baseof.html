@@ -5,14 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  {{ $style := resources.Get "css/main.css" | minify }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
   <script>
     (function(){
       var s=localStorage.getItem('theme')||
         (window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
       document.documentElement.setAttribute('data-theme',s);
+      document.documentElement.classList.add(
+        /Mac|iPhone|iPad|iPod/.test(navigator.userAgent) ? 'mac' : 'non-mac'
+      );
     })();
+    window.AID_BASE = '{{ .Site.Params.aidBase | default "https://aid.zengrong.net" }}';
+    window.AID_R = {{ .Site.Params.aidRegion | default 0 }};
   </script>
 </head>
 <body>

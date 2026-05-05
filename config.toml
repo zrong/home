@@ -40,3 +40,5 @@ title = "ZRONG's HOME"
   beian = "鄂ICP备05002429号-1"
   beianURL = "https://beian.miit.gov.cn/"
   avatar = "/jacky_icon_120x120.jpg"
+  aidBase = "https://aid.zengrong.net"
+  aidRegion = 1

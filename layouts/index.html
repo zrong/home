@@ -1,6 +1,6 @@
 {{ define "main" }}
-<div class="home-container">
-  <div>
+<div class="home-page">
+  <div class="home-container">
     <a href="/"><img class="avatar" src="{{ .Site.Params.avatar }}" alt="avatar" style="width:120px;height:120px;"></a>
     <h1 id="index-header-title">ZRONG's HOME</h1>
     <ul class="home-nav">
@@ -9,8 +9,11 @@
       {{ end }}
     </ul>
   </div>
-</div>
-<div class="home-beian">
-  <a href="{{ .Site.Params.beianURL }}" target="_blank">{{ .Site.Params.beian }}</a>
+  <div class="latest-posts" id="latest-posts" style="display:none;">
+    <div class="latest-posts-grid" id="latest-posts-grid"></div>
+  </div>
+  <div class="home-beian">
+    <a href="{{ .Site.Params.beianURL }}" target="_blank">{{ .Site.Params.beian }}</a>
+  </div>
 </div>
 {{ end }}

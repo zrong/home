@@ -6,11 +6,6 @@
       <span>ZRONG's HOME</span>
     </a>
     {{ end }}
-    <button class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </button>
   </div>
   <div class="navbar-menu" id="navMenu">
     <div class="navbar-start">
@@ -18,10 +13,52 @@
       <a class="navbar-item" href="{{ .URL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank"{{ end }}>{{ .Name }}</a>
       {{ end }}
     </div>
-    <div class="navbar-end">
-      <a class="navbar-item" id="search-btn" title="搜索 (⌘K)" style="cursor:pointer;">🔍</a>
-      <a class="navbar-item" id="theme-toggle" title="切换明暗模式" style="cursor:pointer;">🌙</a>
-    </div>
+  </div>
+  <div class="navbar-tools">
+    <button class="vp-search-btn" id="search-btn" title="搜索 (⌘K)">
+      <span class="vp-icon vpi-search"></span>
+      <span class="vp-search-text">搜索</span>
+      <span class="vp-search-keys">
+        <kbd class="vp-key-cmd">⌘</kbd>
+        <kbd class="vp-key-ctrl">Ctrl</kbd>
+        <kbd>K</kbd>
+      </span>
+    </button>
+    <button class="vp-switch" id="theme-toggle" role="switch" aria-checked="false" title="切换明暗模式">
+      <span class="vp-switch-check">
+        <span class="vp-switch-icon">
+          <span class="vp-icon vpi-sun sun"></span>
+          <span class="vp-icon vpi-moon moon"></span>
+        </span>
+      </span>
+    </button>
+    <button class="navbar-burger" id="nav-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
   </div>
 </nav>
 {{ if not .IsHome }}<div class="top-menu-spacer"></div>{{ end }}
+
+<!-- 移动端全屏菜单抽屉 -->
+<div class="nav-screen" id="nav-screen" aria-hidden="true">
+  <div class="nav-screen-container">
+    <div class="nav-screen-menu">
+      {{ range .Site.Menus.main }}
+      <a class="nav-screen-link" href="{{ .URL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </div>
+    <div class="nav-screen-footer">
+      <span class="nav-screen-footer-label">外观</span>
+      <button class="vp-switch nav-screen-theme-toggle" id="nav-screen-theme-toggle" role="switch" aria-checked="false" title="切换明暗模式">
+        <span class="vp-switch-check">
+          <span class="vp-switch-icon">
+            <span class="vp-icon vpi-sun sun"></span>
+            <span class="vp-icon vpi-moon moon"></span>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>

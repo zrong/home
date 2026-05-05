@@ -22,5 +22,172 @@
       <img src="/about-mp-zrong-net-258.jpg" alt="公众号">
     </div>
   </div>
+
+  <!-- 留言板 -->
+  <section class="mb-section">
+    <h3 id="mb-title">评论</h3>
+    <div id="mb-list" class="mb-list"></div>
+    <div class="mb-form">
+      <div id="mb-reply-hint" class="mb-form-reply-hint">
+        <span id="mb-reply-hint-text"></span>
+        <button class="mb-form-reply-cancel" id="mb-cancel-reply">取消回复</button>
+      </div>
+      <div class="mb-fields">
+        <input id="mb-author" class="mb-field" type="text" placeholder="昵称（可选）">
+        <input id="mb-email" class="mb-field" type="email" placeholder="邮箱（可选）">
+        <input id="mb-website" class="mb-field" type="url" placeholder="网站（可选）">
+      </div>
+      <textarea id="mb-text" class="mb-textarea" placeholder="请输入至少 3 个字。" minlength="3"></textarea>
+      <div class="mb-form-footer">
+        <button id="mb-submit" class="mb-submit">提交</button>
+        <span id="mb-msg" class="mb-msg"></span>
+      </div>
+    </div>
+  </section>
 </main>
+
+<script>
+(function () {
+  const AID    = window.AID_BASE || 'https://aid.zengrong.net';
+  const R      = window.AID_R || 0;
+  const URI    = '/about/';
+  const TITLE  = encodeURIComponent('关于');
+
+  let mbPid    = 0;
+  let replyTo  = 0; // 回复目标的 mb_tid，0 表示顶级留言
+
+  const listEl   = document.getElementById('mb-list');
+  const titleEl  = document.getElementById('mb-title');
+  const hintEl   = document.getElementById('mb-reply-hint');
+  const hintText = document.getElementById('mb-reply-hint-text');
+  const cancelEl = document.getElementById('mb-cancel-reply');
+  const submitEl = document.getElementById('mb-submit');
+  const msgEl    = document.getElementById('mb-msg');
+
+  function gravatar(hash) {
+    return `https://www.gravatar.com/avatar/${hash}?s=72&d=mp`;
+  }
+
+  function formatTime(ts) {
+    if (!ts || ts === '0') return '';
+    const d = new Date(parseInt(ts) * 1000);
+    return d.toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' });
+  }
+
+  function renderItem(mb, isChild) {
+    const authorHtml = mb.website
+      ? `<a href="${mb.website}" target="_blank" rel="nofollow">${mb.author || '匿名'}</a>`
+      : (mb.author || '匿名');
+    const pending = mb.status !== 1
+      ? `<span class="mb-pending">待审核</span>` : '';
+    const childClass = isChild ? ' is-child' : '';
+    let html = `
+      <div class="mb-item${childClass}" data-tid="${mb.mb_tid}">
+        <img class="mb-avatar" src="${gravatar(mb.hash)}" alt="avatar" loading="lazy">
+        <div class="mb-body">
+          <div class="mb-meta">
+            <span class="mb-author">${authorHtml}</span>
+            <span class="mb-time">${formatTime(mb.createtime)}</span>
+            ${pending}
+          </div>
+          <div class="mb-text">${mb.text}</div>
+          <div class="mb-actions">
+            <button class="mb-reply-btn" data-tid="${mb.mb_tid}" data-author="${mb.author || '匿名'}">回复</button>
+          </div>
+        </div>
+      </div>`;
+    if (mb.reply && mb.reply.length > 0) {
+      mb.reply.forEach(child => { html += renderItem(child, true); });
+    }
+    return html;
+  }
+
+  function loadComments() {
+    listEl.innerHTML = '<div class="mb-empty">加载中…</div>';
+    fetch(`${AID}/api/messageboard/list?uri=${encodeURIComponent(URI)}&title=${TITLE}&r=${R}`)
+      .then(r => r.json())
+      .then(data => {
+        mbPid = data.mb_pid;
+        const total = data.message.total || 0;
+        titleEl.textContent = total > 0 ? `${total} 条评论` : '评论';
+        const replies = data.message.reply || [];
+        if (replies.length === 0) {
+          listEl.innerHTML = '<div class="mb-empty">暂无评论，来留下第一条吧。</div>';
+          return;
+        }
+        listEl.innerHTML = replies.map(mb => renderItem(mb, false)).join('');
+        listEl.querySelectorAll('.mb-reply-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            replyTo = parseInt(btn.dataset.tid);
+            hintText.textContent = `回复 ${btn.dataset.author}`;
+            hintEl.classList.add('is-active');
+            document.getElementById('mb-text').focus();
+          });
+        });
+      })
+      .catch(() => {
+        listEl.innerHTML = '<div class="mb-empty">评论加载失败。</div>';
+      });
+  }
+
+  cancelEl.addEventListener('click', () => {
+    replyTo = 0;
+    hintEl.classList.remove('is-active');
+  });
+
+  submitEl.addEventListener('click', () => {
+    const text = document.getElementById('mb-text').value.trim();
+    if (text.length < 3) {
+      msgEl.className = 'mb-msg is-error';
+      msgEl.textContent = '请输入至少 3 个字。';
+      return;
+    }
+    if (mbPid === 0) {
+      msgEl.className = 'mb-msg is-error';
+      msgEl.textContent = '页面尚未就绪，请稍后再试。';
+      return;
+    }
+    submitEl.disabled = true;
+    msgEl.className = 'mb-msg';
+    msgEl.textContent = '提交中…';
+    const body = {
+      mb_pid:  mbPid,
+      parent:  replyTo,
+      mb_tid:  0,
+      author:  document.getElementById('mb-author').value.trim() || null,
+      email:   document.getElementById('mb-email').value.trim()  || null,
+      website: document.getElementById('mb-website').value.trim() || null,
+      text,
+    };
+    fetch(`${AID}/api/messageboard`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    })
+      .then(r => r.json())
+      .then(data => {
+        submitEl.disabled = false;
+        if (data.detail) {
+          msgEl.className = 'mb-msg is-error';
+          msgEl.textContent = data.detail;
+          return;
+        }
+        document.getElementById('mb-text').value = '';
+        replyTo = 0;
+        hintEl.classList.remove('is-active');
+        msgEl.className = 'mb-msg';
+        msgEl.textContent = '已提交，待审核后显示。';
+        loadComments();
+      })
+      .catch(err => {
+        submitEl.disabled = false;
+        msgEl.className = 'mb-msg is-error';
+        msgEl.textContent = '提交失败，请稍后再试。';
+        console.error('[mb] POST failed:', err);
+      });
+  });
+
+  loadComments();
+})();
+</script>
 {{ end }}
