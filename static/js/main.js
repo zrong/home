@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const latestSection = document.getElementById('latest-posts');
   const latestGrid    = document.getElementById('latest-posts-grid');
   if (latestSection && latestGrid) {
-    fetch('https://aid.zengrong.net/api/latest?limit=3')
+    fetch(`https://aid.zengrong.net/api/latest?limit=3&r=${window.AID_R || -1}`)
       .then(r => r.json())
       .then(data => {
         if (!data.results || data.results.length === 0) return;
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     debounceTimer = setTimeout(() => {
       searchResults.innerHTML = '<div class="search-empty">搜索中...</div>';
-      fetch(`${AID_SEARCH}?q=${encodeURIComponent(q)}&limit=10`)
+      fetch(`${AID_SEARCH}?q=${encodeURIComponent(q)}&r=${window.AID_R || -1}&limit=10`)
         .then(r => r.json())
         .then(data => {
           if (!data.results || data.results.length === 0) {
