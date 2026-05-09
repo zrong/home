@@ -20,6 +20,26 @@ zengrong.net 主页。Hugo 静态站点。
 
 - `config.toml` 中 `params.aidBase` 配置 aid 服务地址
 - `params.aidRegion` 配置 regional 分区（默认 1）
+- 开发环境自动切换到 `http://localhost:8000`（通过 `hugo.IsProduction` 检测）
+
+## 本地测试
+
+测试搜索功能需要先启动 aid 后端：
+
+```bash
+# 1. 启动 aid（端口 8000）
+cd ../aid && just dev
+
+# 2. 启动 home（端口 1314，避免与 blog 端口冲突）
+just dev    # 自动从 localhost:8000 加载 aid API
+
+# 3. 测试检查项
+# - Cmd/Ctrl+K 打开搜索弹窗
+# - 输入关键词 → 显示结果
+# - 首页最新文章列表加载
+# - 关于页留言板功能
+# - DevTools Console 无报错
+```
 
 ## 部署
 

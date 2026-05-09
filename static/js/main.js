@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const latestSection = document.getElementById('latest-posts');
   const latestGrid    = document.getElementById('latest-posts-grid');
   if (latestSection && latestGrid) {
-    fetch(`https://aid.zengrong.net/api/latest?limit=3&r=${window.AID_R || -1}`)
+    fetch(`${window.AID_BASE}/api/latest?limit=3&r=${window.AID_R || -1}`)
       .then(r => r.json())
       .then(data => {
         if (!data.results || data.results.length === 0) return;
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // ----- 搜索（调用 aid FTS5 API）-----
-  const AID_SEARCH    = 'https://aid.zengrong.net/api/search';
+  const AID_SEARCH    = window.AID_BASE + '/api/search';
   const searchBtn     = document.getElementById('search-btn');
   const searchOverlay = document.getElementById('search-overlay');
   const searchClose   = document.getElementById('search-close-btn');

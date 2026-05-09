@@ -5,7 +5,7 @@ aid_url := "https://aid.zengrong.net"
 aid_region := "1"
 
 dev:
-    hugo server -D
+    hugo server -D --port 1314 --baseURL http://localhost:1314/
 
 build:
     hugo

@@ -16,7 +16,7 @@
         /Mac|iPhone|iPad|iPod/.test(navigator.userAgent) ? 'mac' : 'non-mac'
       );
     })();
-    window.AID_BASE = '{{ .Site.Params.aidBase | default "https://aid.zengrong.net" }}';
+    window.AID_BASE = '{{ if hugo.IsProduction }}{{ .Site.Params.aidBase | default "https://aid.zengrong.net" }}{{ else }}http://localhost:8000{{ end }}';
     window.AID_R = {{ .Site.Params.aidRegion | default 0 }};
   </script>
 </head>
