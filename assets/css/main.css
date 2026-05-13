@@ -394,7 +394,7 @@ tr:hover td { background: var(--bg-alt); }
   background: var(--bg-alt);
   color: var(--text-muted);
 }
-.search-results { max-height: 400px; overflow-y: auto; }
+.search-results { max-height: 600px; overflow-y: auto; }
 .search-result-item {
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--border);

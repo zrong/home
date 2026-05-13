@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // ----- 平台检测（控制 ⌘/Ctrl 快捷键显示）-----
+  const isMac = /Mac|iPhone|iPod|iPad/.test(navigator.platform);
+  document.documentElement.classList.add(isMac ? 'mac' : 'non-mac');
+
   // ----- Pageview 静默上报 -----
   fetch(`${window.AID_BASE}/api/pageview/hit?uri=${encodeURIComponent(location.pathname)}&r=${window.AID_R}`)
     .catch(() => {});
@@ -25,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const latestSection = document.getElementById('latest-posts');
   const latestGrid    = document.getElementById('latest-posts-grid');
   if (latestSection && latestGrid) {
-    fetch(`${window.AID_BASE}/api/latest?limit=3&r=${window.AID_R || -1}`)
+    fetch(`${window.AID_BASE}/api/latest?limit=3&r=0`)
       .then(r => r.json())
       .then(data => {
         if (!data.results || data.results.length === 0) return;
@@ -170,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     debounceTimer = setTimeout(() => {
       searchResults.innerHTML = '<div class="search-empty">搜索中...</div>';
-      fetch(`${AID_SEARCH}?q=${encodeURIComponent(q)}&r=${window.AID_R || -1}&limit=10`)
+      fetch(`${AID_SEARCH}?q=${encodeURIComponent(q)}&r=-1&limit=10`)
         .then(r => r.json())
         .then(data => {
           if (!data.results || data.results.length === 0) {
