@@ -31,9 +31,14 @@ title = "ZRONG's HOME"
   weight = 4
 
 [[menu.main]]
+  name = "搜索"
+  url = "/search/"
+  weight = 5
+
+[[menu.main]]
   name = "BLOG"
   url = "https://blog.zengrong.net"
-  weight = 5
+  weight = 6
 
 [params]
   author = "zrong"

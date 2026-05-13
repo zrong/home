@@ -1,0 +1,109 @@
+:host {
+  display: block;
+  width: 100%;
+  --aid-search-bg: var(--bg, #fff);
+  --aid-search-text: var(--text, #4a4a4a);
+  --aid-search-muted: var(--text-muted, #888);
+  --aid-search-border: var(--border, #dbdbdb);
+  --aid-search-accent: var(--link, #3273dc);
+  --aid-search-hover: var(--bg-alt, #f5f5f5);
+}
+
+.aid-sp-container {
+  max-width: 100%;
+  width: 100%;
+}
+
+.aid-sp-box {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+#aid-sp-input {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--aid-search-border);
+  border-radius: 6px;
+  font-size: 1rem;
+  background: var(--aid-search-bg);
+  color: var(--aid-search-text);
+}
+
+#aid-sp-input:focus {
+  border-color: var(--aid-search-accent);
+  box-shadow: 0 0 0 2px rgba(50, 115, 220, 0.15);
+}
+
+.aid-sp-btn {
+  padding: 0.7rem 1.5rem;
+  background: var(--aid-search-accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.aid-sp-btn:hover {
+  filter: brightness(0.9);
+}
+
+.aid-sp-status {
+  font-size: 0.85rem;
+  color: var(--aid-search-muted);
+  margin-bottom: 1rem;
+}
+
+.aid-sp-results {
+  width: 100%;
+}
+
+.aid-sp-results .aid-sr-item {
+  width: 100%;
+  border: 1px solid var(--aid-search-border);
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+  transition: border-color 0.15s;
+}
+
+.aid-sp-results .aid-sr-item:hover {
+  border-color: var(--aid-search-accent);
+}
+
+.aid-sr-item a {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--aid-search-text);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.aid-sr-date {
+  color: var(--aid-search-muted);
+  font-size: 0.8rem;
+}
+
+.aid-sr-item p {
+  margin: 0.25rem 0 0;
+  color: var(--aid-search-muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.aid-sr-item mark {
+  border-radius: 2px;
+  background: rgba(255, 200, 0, 0.3);
+  color: inherit;
+}
+
+.aid-sr-empty {
+  padding: 1.5rem;
+  color: var(--aid-search-muted);
+  text-align: center;
+}
