@@ -10,7 +10,21 @@
   <div class="navbar-menu" id="navMenu">
     <div class="navbar-start">
       {{ range .Site.Menus.main }}
+      {{ if .HasChildren }}
+      <div class="navbar-group">
+        <a class="navbar-item" href="{{ .URL }}">{{ .Name }}</a>
+        <button class="navbar-submenu-toggle" aria-label="展开{{ .Name }}子菜单" aria-expanded="false" aria-controls="nav-{{ .Identifier }}">
+          <span aria-hidden="true">⌄</span>
+        </button>
+        <div class="navbar-dropdown" id="nav-{{ .Identifier }}" hidden>
+          {{ range .Children }}
+          <a class="navbar-item" href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
+        </div>
+      </div>
+      {{ else }}
       <a class="navbar-item" href="{{ .URL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank"{{ end }}>{{ .Name }}</a>
+      {{ end }}
       {{ end }}
     </div>
   </div>
@@ -47,6 +61,13 @@
     <div class="nav-screen-menu">
       {{ range .Site.Menus.main }}
       <a class="nav-screen-link" href="{{ .URL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank"{{ end }}>{{ .Name }}</a>
+      {{ if .HasChildren }}
+      <div class="nav-screen-children">
+        {{ range .Children }}
+        <a class="nav-screen-link" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
       {{ end }}
     </div>
     <div class="nav-screen-footer">

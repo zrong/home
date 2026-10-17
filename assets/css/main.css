@@ -111,6 +111,36 @@ ul { padding-left: 1.5rem; }
 }
 .navbar-item:hover { background: var(--bg-alt); text-decoration: none; color: var(--text); }
 
+.navbar-group { display: flex; align-items: center; position: relative; }
+.navbar-group > .navbar-item { padding-right: 0.25rem; }
+.navbar-submenu-toggle {
+  align-self: stretch;
+  padding: 0 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+.navbar-submenu-toggle:hover { background: var(--bg-alt); }
+.navbar-submenu-toggle[aria-expanded="true"] span { display: block; transform: rotate(180deg); }
+.navbar-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  padding: 0.4rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+}
+.navbar-dropdown .navbar-item { display: block; white-space: nowrap; }
+.navbar-group a:focus-visible,
+.navbar-submenu-toggle:focus-visible,
+.project-page a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+
 .navbar-burger {
   display: none;
   flex-direction: column;
@@ -129,7 +159,7 @@ ul { padding-left: 1.5rem; }
   transition: all 0.2s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .navbar { flex-wrap: nowrap; height: 52px; padding: 0 1rem; }
   .navbar-menu { display: none; }
   .navbar-burger { display: flex; }
@@ -138,6 +168,7 @@ ul { padding-left: 1.5rem; }
 }
 
 .top-menu-spacer { height: 82px; }
+@media (max-width: 1024px) { .top-menu-spacer { height: 52px; } }
 
 /* ===== 头像 ===== */
 .avatar {
@@ -251,6 +282,17 @@ ul { padding-left: 1.5rem; }
 #main-article p  { margin: 0.5rem 0; line-height: 1.6; }
 #main-article ul { margin: 0.5rem 0 0.5rem 1.5rem; }
 #main-article li { margin: 0.25rem 0; }
+
+/* ===== 项目列表与介绍 ===== */
+.project-content { width: 100%; max-width: 800px; margin: 1rem auto 2rem; overflow-wrap: anywhere; }
+.project-entry { padding: 0.5rem 0 1.5rem; border-bottom: 1px solid var(--border); }
+.project-content ol { margin: 0.5rem 0; padding-left: 1.5rem; line-height: 1.7; }
+.project-content li { line-height: 1.7; }
+.project-content table { display: block; overflow-x: auto; margin: 1rem 0; overflow-wrap: normal; }
+.project-content td:first-child { white-space: nowrap; }
+.project-content pre { overflow-x: auto; padding: 1rem; margin: 1rem 0; background: var(--bg-alt); border-radius: 4px; }
+.project-content code { font-size: 0.9em; }
+.project-content h2 { scroll-margin-top: 6rem; }
 
 /* ===== Tags ===== */
 .tag {
@@ -490,6 +532,8 @@ footer img { vertical-align: middle; margin-bottom: 0.5rem; }
   left: 0;
   right: 0;
   background: var(--bg);
+  max-height: 100dvh;
+  overflow-y: auto;
   border-bottom: 1px solid var(--border);
   padding: 4rem 1.5rem 1.5rem;
   animation: slideDown 0.2s ease;
@@ -512,6 +556,8 @@ footer img { vertical-align: middle; margin-bottom: 0.5rem; }
   border-bottom: 1px solid var(--border);
 }
 .nav-screen-link:hover { color: var(--link); text-decoration: none; }
+.nav-screen-children { padding-left: 1.25rem; }
+.nav-screen-children .nav-screen-link { font-size: 0.9375rem; }
 .nav-screen-footer {
   display: flex;
   align-items: center;

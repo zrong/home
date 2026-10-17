@@ -1,0 +1,17 @@
+{{ define "main" }}
+<main id="main-article" class="project-page">
+  <div class="project-content">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <div class="project-list">
+      {{ range .RegularPages.ByWeight }}
+      <article class="project-entry">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Description }}</p>
+        <a href="{{ .RelPermalink }}">了解 {{ .Title }}</a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</main>
+{{ end }}

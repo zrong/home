@@ -3,6 +3,36 @@ document.addEventListener('DOMContentLoaded', function () {
   const isMac = /Mac|iPhone|iPod|iPad/.test(navigator.platform);
   document.documentElement.classList.add(isMac ? 'mac' : 'non-mac');
 
+  // ----- 导航子菜单（主链接访问列表，独立按钮展开项目）-----
+  const navGroups = document.querySelectorAll('.navbar-group');
+  navGroups.forEach(group => {
+    const toggle = group.querySelector('.navbar-submenu-toggle');
+    const dropdown = group.querySelector('.navbar-dropdown');
+    function setOpen(open) {
+      toggle.setAttribute('aria-expanded', String(open));
+      dropdown.hidden = !open;
+    }
+    toggle.addEventListener('click', () => setOpen(dropdown.hidden));
+    group.querySelector('a').addEventListener('pointerenter', e => {
+      if (e.pointerType === 'mouse') setOpen(true);
+    });
+    group.addEventListener('pointerleave', () => {
+      if (!group.contains(document.activeElement)) setOpen(false);
+    });
+    group.addEventListener('focusout', e => {
+      if (!group.contains(e.relatedTarget)) setOpen(false);
+    });
+    group.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && !dropdown.hidden) {
+        toggle.focus();
+        setOpen(false);
+      }
+    });
+    document.addEventListener('click', e => {
+      if (!group.contains(e.target)) setOpen(false);
+    });
+  });
+
   // ----- Pageview 静默上报 -----
   fetch(`${window.AID_BASE}/api/pageview/hit?uri=${encodeURIComponent(location.pathname)}&r=${window.AID_R}`)
     .catch(() => {});

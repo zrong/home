@@ -1,0 +1,9 @@
+{{ define "main" }}
+<main id="main-article" class="project-page">
+  <article class="project-content">
+    <p><a href="{{ .Parent.RelPermalink }}">返回项目列表</a></p>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </article>
+</main>
+{{ end }}
