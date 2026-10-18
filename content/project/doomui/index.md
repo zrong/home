@@ -1,7 +1,8 @@
 +++
 title = "DoomUI"
-description = "连接 Figma 与 Cocos Creator 的开源 UI 工具链：手动推送设计，预览变更，持续更新视觉 Prefab。"
+description = "连接 Figma 与 Cocos Creator 的开源 UI 工具链：兼容 >=3.8.6 <3.9.0，手动推送设计，预览变更，持续更新视觉 Prefab。"
 date = 2026-10-17T00:00:00+08:00
+lastmod = 2026-10-18T00:00:00+08:00
 weight = 1
 
 [menu.main]
@@ -9,7 +10,11 @@ weight = 1
   weight = 1
 +++
 
-DoomUI 是一套连接 **Figma 与 Cocos Creator 3.8.6** 的开源 UI 工具链。设计师在 Figma 中调整界面，手动推送所选设计；程序员在 Cocos 中预览变更，确认后生成或更新 Prefab，让设计迭代进入游戏工程。
+DoomUI 是一套连接 Figma 与 Cocos Creator 的开源 UI 工具链。设计师在 Figma 中调整界面，手动推送所选设计；程序员在 Cocos 中预览变更，确认后生成或更新 Prefab，让设计迭代进入游戏工程。
+
+兼容范围：Cocos Creator `>=3.8.6 <3.9.0`。当前已在 macOS + Figma Desktop + Creator 3.8.6 完成运行态验证，范围内其他补丁版本尚未逐一验收。
+
+[DoomUI 官方网站](https://zengrong.net/project/doomui/) · [GitHub 源码](https://github.com/zrong/doomui)
 
 项目由我开发，源码采用 [MIT 许可证](https://github.com/zrong/doomui/blob/master/LICENSE)开放。
 
@@ -20,7 +25,7 @@ DoomUI 由两个配套插件组成，需要在同一台电脑上运行：
 | 插件 | 运行环境 | 主要用途 |
 | --- | --- | --- |
 | **Cocos Sync** | Figma Desktop | 推送所选 Frame / Component，导入现有 Cocos Prefab 与共享素材 |
-| **Figma Sync** | Cocos Creator 3.8.6 | 接收设计、预览差异、应用变更，生成 Prefab 和贴图 |
+| **Figma Sync** | Cocos Creator `>=3.8.6 <3.9.0` | 接收设计、预览差异、应用变更，生成 Prefab 和贴图 |
 
 日常操作分为四步：
 
@@ -49,7 +54,7 @@ DoomUI 由两个配套插件组成，需要在同一台电脑上运行：
 
 截至 **2026 年 10 月 17 日**，两个插件的首次发布申请均已提交审核，**尚未公开上架**；审核期间可按 [开发指南](https://github.com/zrong/doomui/blob/master/docs/development.md)从源码安装。
 
-当前面向 **macOS + Figma Desktop + Cocos Creator 3.8.6**。源码安装还需要 Node.js 18+，推荐使用 `just` 运行仓库命令：
+当前面向 macOS + Figma Desktop，Creator 兼容范围为 `>=3.8.6 <3.9.0`。源码安装还需要 Node.js 18+，推荐使用 `just` 运行仓库命令：
 
 ```bash
 git clone https://github.com/zrong/doomui.git
@@ -59,13 +64,13 @@ just check
 just sandbox-link
 ```
 
-然后用 Creator 打开仓库中的 `figma-ui-sync-sandbox/`，在 Figma Desktop 中通过「Plugins → Development → Import plugin from manifest…」导入 `cocos-sync/manifest.json`，按开发指南完成配对与首次同步。
+然后用 Creator 3.8.6 打开仓库中的 `sandbox/`，直接运行 `assets/ArticleDemo.scene` 可体验按钮逻辑与九宫格。在 Figma Desktop 中通过「Plugins → Development → Import plugin from manifest…」导入 `cocos-sync/manifest.json`，按开发指南完成配对与首次同步。重新走同步流程时使用独立输出 Bundle，详见 [Sandbox 说明](https://github.com/zrong/doomui/blob/master/sandbox/README.md)。
 
 ## 使用范围
 
 DoomUI 使用手动推送，不自动监听设计修改，也不会自动执行 Apply。现有 Prefab 导入 Figma 是一次性的设计接管，后续保持 Figma → Cocos 单向同步；不支持两端修改的自动合并，也不直接处理 PSD。
 
-Toggle、ScrollView、ProgressBar、RichText 等业务组件目前没有专用转换，需由程序员在逻辑层维护。Figma 网页版、Windows 和其他 Creator 小版本尚不属于当前完成验收的宿主组合。完整限制与运行态验证情况见 [验收记录](https://github.com/zrong/doomui/blob/master/docs/acceptance.md)。
+Toggle、ScrollView、ProgressBar、RichText 等业务组件目前没有专用转换，需由程序员在逻辑层维护。Figma 网页版、Windows，以及兼容范围内除 Creator 3.8.6 之外的补丁版本尚未完成运行态验收。完整限制与运行态验证情况见 [验收记录](https://github.com/zrong/doomui/blob/master/docs/acceptance.md)。
 
 ## 文档与反馈
 
