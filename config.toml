@@ -13,6 +13,7 @@ title = "ZRONG's HOME"
 [[menu.main]]
   name = "阅读"
   url = "/read/"
+  parent = "about"
   weight = 1
 
 [[menu.main]]
@@ -32,6 +33,7 @@ title = "ZRONG's HOME"
   weight = 4
 
 [[menu.main]]
+  identifier = "about"
   name = "关于"
   url = "/about/"
   weight = 5
