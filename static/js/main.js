@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const isMac = /Mac|iPhone|iPod|iPad/.test(navigator.platform);
   document.documentElement.classList.add(isMac ? 'mac' : 'non-mac');
 
-  // ----- 导航子菜单（主链接访问列表，独立按钮展开项目）-----
+  // ----- 导航子菜单（主链接访问页面，悬停整个菜单组展开子菜单）-----
   const navGroups = document.querySelectorAll('.navbar-group');
   navGroups.forEach(group => {
     const toggle = group.querySelector('.navbar-submenu-toggle');
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
       dropdown.hidden = !open;
     }
     toggle.addEventListener('click', () => setOpen(dropdown.hidden));
-    group.querySelector('a').addEventListener('pointerenter', e => {
+    group.addEventListener('pointerenter', e => {
       if (e.pointerType === 'mouse') setOpen(true);
     });
     group.addEventListener('pointerleave', () => {

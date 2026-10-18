@@ -25,7 +25,8 @@
   {{- block "main" . }}{{- end }}
   {{ if not .IsHome }}{{- partial "footer.html" . }}{{ end }}
   {{- partial "search-modal.html" . }}
-  <script src="/js/main.js"></script>
+  {{ $script := resources.FromString "js/main.js" (readFile "static/js/main.js") | fingerprint }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
   {{- if hugo.IsProduction }}
   <script src="https://aid.zengrong.net/static/aidapi.js"></script>
   {{- else }}
