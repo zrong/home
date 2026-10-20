@@ -2,7 +2,7 @@
 title = "DoomUI"
 description = "连接 Figma 与 Cocos Creator 的开源 UI 工具链：兼容 >=3.8.6 <3.9.0，手动推送设计，预览变更，持续更新视觉 Prefab。"
 date = 2026-10-17T00:00:00+08:00
-lastmod = 2026-10-18T00:00:00+08:00
+lastmod = 2026-10-20T00:00:00+08:00
 weight = 1
 
 [menu.main]
@@ -10,13 +10,13 @@ weight = 1
   weight = 1
 +++
 
-DoomUI 是一套连接 Figma 与 Cocos Creator 的开源 UI 工具链。设计师在 Figma 中调整界面，手动推送所选设计；程序员在 Cocos 中预览变更，确认后生成或更新 Prefab，让设计迭代进入游戏工程。
+DoomUI 是一套连接 Figma 与 Cocos Creator 的开源 UI 工具链。设计师在 Figma 中调整界面，手动推送所选设计；程序员在 Cocos 中预览变更，确认后生成或更新 Prefab，让设计迭代进入游戏工程。 详细介绍见[《美术切图，程序重拼：游戏 UI 同步的苦，能靠 AI 解决吗？》](https://blog.zengrong.net/post/figma-cocos-ui-sync-doomui/)。
 
 兼容范围：Cocos Creator `>=3.8.6 <3.9.0`。当前已在 macOS + Figma Desktop + Creator 3.8.6 完成运行态验证，范围内其他补丁版本尚未逐一验收。
 
 [DoomUI 官方网站](https://zengrong.net/project/doomui/) · [GitHub 源码](https://github.com/zrong/doomui)
 
-项目由我开发，源码采用 [MIT 许可证](https://github.com/zrong/doomui/blob/master/LICENSE)开放。
+源码采用 [MIT 许可证](https://github.com/zrong/doomui/blob/master/LICENSE)开放。
 
 ## 两个插件，一条工作流
 
@@ -50,9 +50,9 @@ DoomUI 由两个配套插件组成，需要在同一台电脑上运行：
 
 - [GitHub 开源仓库](https://github.com/zrong/doomui)：源码、安装说明、最小验收工程与完整文档。
 - [Figma Community · Cocos Sync](https://www.figma.com/community/plugin/1675173114763421112/cocos-sync)：Figma 端插件。
-- [Cocos Store · Figma Sync](https://store.cocos.com/)：Creator 端插件。
+- [Cocos Store · Figma Sync](https://store.cocos.com/app/detail/9750)：Creator 端插件。
 
-截至 **2026 年 10 月 17 日**，两个插件的首次发布申请均已提交审核，**尚未公开上架**；审核期间可按 [开发指南](https://github.com/zrong/doomui/blob/master/docs/development.md)从源码安装。
+截至 **2026 年 10 月 20 日**，Cocos 端的 **Figma Sync 已通过审核并上架**，可从 [Cocos 商城免费获取](https://store.cocos.com/app/detail/9750)，在 Creator 的「扩展 → 扩展管理器」中导入安装包并启用。Figma 端的 Cocos Sync 仍在 Community 审核中，可按 [开发指南](https://github.com/zrong/doomui/blob/master/docs/development.md)导入开发插件。
 
 当前面向 macOS + Figma Desktop，Creator 兼容范围为 `>=3.8.6 <3.9.0`。源码安装还需要 Node.js 18+，推荐使用 `just` 运行仓库命令：
 
