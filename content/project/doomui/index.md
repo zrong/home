@@ -2,7 +2,7 @@
 title = "DoomUI"
 description = "连接 Figma 与 Cocos Creator 的开源 UI 工具链：兼容 >=3.8.6 <3.9.0，手动推送设计，预览变更，持续更新视觉 Prefab。"
 date = 2026-10-17T00:00:00+08:00
-lastmod = 2026-10-20T00:00:00+08:00
+lastmod = 2026-10-20T12:25:41+08:00
 weight = 1
 
 [menu.main]
