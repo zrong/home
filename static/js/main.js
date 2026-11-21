@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
   // ----- 平台检测（控制 ⌘/Ctrl 快捷键显示）-----
   const isMac = /Mac|iPhone|iPod|iPad/.test(navigator.platform);
-  document.documentElement.classList.add(isMac ? 'mac' : 'non-mac');
+  document.documentElement.classList.toggle('mac', isMac);
+  document.documentElement.classList.toggle('non-mac', !isMac);
+
+  const searchBtn = document.getElementById('search-btn');
+  if (searchBtn) searchBtn.title = `搜索 (${isMac ? '⌘K' : 'Ctrl+K'})`;
 
   // ----- 导航子菜单（主链接访问页面，悬停整个菜单组展开子菜单）-----
   const navGroups = document.querySelectorAll('.navbar-group');
