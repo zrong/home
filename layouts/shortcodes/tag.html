@@ -1,0 +1,5 @@
+{{- $color := .Get 1 | default "success" -}}
+{{- if not (in (slice "dark" "success" "info" "warning") $color) -}}
+  {{- errorf "tag shortcode 不支持颜色 %q" $color -}}
+{{- end -}}
+<span class="tag is-{{ $color }}">{{ .Get 0 }}</span>

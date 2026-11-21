@@ -12,6 +12,19 @@ zengrong.net 主页。Hugo 静态站点。
 | `just push-index` | 推送搜索索引到 aid (需设置 AID_TOKEN) |
 | `just deploy-all` | 部署 + 推送索引（一步完成）|
 
+## Joplin 同步
+
+生涯、关于和项目等 `.Content` 驱动的 Markdown 页面通过工作区 `.agents/skills/homesite/` 与 Joplin Home 笔记本双向同步。先读取该 skill 的 `SKILL.md` 和 frontmatter 约定，使用 `homesite status` / `sync --dry-run` 预检；首次迁移须明确同步方向。
+
+```bash
+uv run --project ../.agents/skills/homesite/scripts homesite status --page /career/
+uv run --project ../.agents/skills/homesite/scripts homesite sync --page /career/ --dry-run
+```
+
+Home 不使用 Blog 的 postid 和 rspeak 页面模型。同步正文以 Markdown 为准，不把网页容器、段落、列表或样式 HTML 写入 Joplin；生涯标签使用 `layouts/shortcodes/tag.html`，图片统一使用标准 Markdown，`![alt](url)` 的方括号内容即图片 alt。
+
+`homesite` 源码位于 `motoko/skills/homesite/`，工作区 `.agents/skills/homesite` 是注册链接。同步不自动部署或更新索引；涉及正文时核对 `lastmod`，发布后另行更新 regional `1` 索引。
+
 ## 环境变量
 
 - `AID_TOKEN`: API token，用于推送搜索索引到 aid.zengrong.net
