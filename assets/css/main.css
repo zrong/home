@@ -285,6 +285,8 @@ ul { padding-left: 1.5rem; }
 
 /* ===== 项目列表与介绍 ===== */
 .project-content { width: 100%; max-width: 800px; margin: 1rem auto 2rem; overflow-wrap: anywhere; }
+.project-content img { max-width: 100%; height: auto; }
+.project-content img[alt*="二维码"] { width: 180px; }
 .project-entry { padding: 0.5rem 0 1.5rem; border-bottom: 1px solid var(--border); }
 .project-content ol { margin: 0.5rem 0; padding-left: 1.5rem; line-height: 1.7; }
 .project-content li { line-height: 1.7; }
