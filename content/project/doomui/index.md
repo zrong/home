@@ -1,13 +1,16 @@
 +++
 title = "DoomUI"
 description = "连接 Figma 与 Cocos Creator 的开源 UI 工具链：兼容 >=3.8.6 <3.9.0，手动推送设计，预览变更，持续更新视觉 Prefab。"
-date = 2026-10-17T00:00:00+08:00
-lastmod = 2026-10-20T12:25:41+08:00
+date = 2026-10-17 00:00:00+08:00
+lastmod = "2026-11-21T10:53:33.942000+08:00"
 weight = 1
+url = "/project/doomui/"
+joplin_id = "78f425b9d7454507b5bdb0047e1a74eb"
+source_url = "https://zengrong.net/project/doomui/"
 
 [menu.main]
-  parent = "projects"
-  weight = 1
+parent = "projects"
+weight = 1
 +++
 
 DoomUI 是一套连接 Figma 与 Cocos Creator 的开源 UI 工具链。设计师在 Figma 中调整界面，手动推送所选设计；程序员在 Cocos 中预览变更，确认后生成或更新 Prefab，让设计迭代进入游戏工程。 详细介绍见[《美术切图，程序重拼：游戏 UI 同步的苦，能靠 AI 解决吗？》](https://blog.zengrong.net/post/figma-cocos-ui-sync-doomui/)。
