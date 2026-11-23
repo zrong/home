@@ -3,7 +3,7 @@ title = "生涯"
 url = "/career/"
 joplin_id = "d9b9bf77bd274faf9b87f9e265d1ec6d"
 source_url = "https://zengrong.net/career/"
-lastmod = "2026-11-21T12:18:47.417000+08:00"
+lastmod = "2026-11-23T11:24:04.824000+08:00"
 
 [joplin_resources]
 ":/633508ee258b4188b0eec58c688f1648" = "/project-game-yhq.png"
@@ -18,17 +18,48 @@ lastmod = "2026-11-21T12:18:47.417000+08:00"
 ":/d56750d3df004620921ccf07ccfb95a6" = "/career-event-suzhou-2024.jpg"
 ":/5b8e22ae81164959b046fba9f2db27d7" = "/career-event-wuhan-2024.jpg"
 ":/6f69186be45040db965475ff7d63faef" = "/career-award-2005.jpg"
+":/f4c2a2763bdc4dd2bf3ad9c729d53050" = "/f82032d7d1c86247728654824936e6e9-7828de9759.png"
 +++
 
-## 作为创业者 {{% tag "2010~" "dark" %}}
+{{< article-toc >}}
 
-### 胡扯游戏 / 武汉虎澈科技 {{% tag "2024~" "dark" %}}
+持续创业者，游戏热爱者，沦为程序员的美术老师，15年游戏行业老兵。
+
+武汉虎澈科技有限公司 创始人 & CEO。游戏自媒体「胡扯游戏」唯一撰稿人。
+
+## 不那么正式的正式介绍
+
+美术老师跨行技术，程序员出身的创业者，自研自发百人游戏公司从0到1的实践者。
+
+从研发、管理、发行、商务到运营均有一线实践：
+
+- 人事管理
+- 项目管理
+- 发行管理
+- 产品策划
+- 技术管理
+- 财务管理
+
+### 更喜欢的自我介绍
+
+- 二十年中老年野生程序员（会修电脑会超频）
+- 十年一线教学、六年培训和会议组织
+- 精通用十八种编程语言写 Hello World
+- 页游/手游/网站前后端/APP/服务器
+- SAGITEAM 的IT+运维+架构师
+- 千万日活，分离架构，一键部署的小游戏通用服务器 MJP 发起和主要（可能唯一）维护者
+- 封笔美工+菜鸟策划+兼职投放+核心运营+高端引入商务
+- 有成功项目的制作人
+
+## 创业者曾老师 {{% tag "2010~NOW" "dark" %}}
+
+### 三次创业：胡扯游戏 / 武汉虎澈科技 {{% tag "2024~NOW" "dark" %}}
 
 ![胡扯游戏](/career-huche-logo.png)
 
 第三次创业，武汉虎澈科技有限公司创始人 & CEO，游戏自媒体「胡扯游戏」唯一撰稿人，当前聚焦 AI 漫剧制作。
 
-### SAGI GAMES {{% tag "2017~2023" "dark" %}}
+### 二次创业：SAGI GAMES {{% tag "2017~2023" "dark" %}}
 
 ![SAGI GAMES](/career-sagi-logo.png)
 
@@ -55,7 +86,7 @@ lastmod = "2026-11-21T12:18:47.417000+08:00"
 
 **社交麻将** {{< tag "HTML5-微信公众平台" >}} {{< tag "Android" >}} {{< tag "iOS" >}}
 
-### TEAM1201 {{% tag "2010~2015" "dark" %}}
+### 一次创业：TEAM1201 {{% tag "2010~2015" "dark" %}}
 
 ![TEAM1201](/career-team1201-logo.png)
 
@@ -73,7 +104,7 @@ lastmod = "2026-11-21T12:18:47.417000+08:00"
 
 三国题材的 SLG 手游。第一次创业时的作品，作为主要开发者参与。在中国大陆、香港、台湾、韩国运营。
 
-## 作为演讲者 {{% tag "2023~2025" "dark" %}}
+## 演讲者曾老师 {{% tag "2023~2025" "dark" %}}
 
 活跃于游戏出海、小游戏生态与 AI 研发工作流等行业峰会与沙龙，担任主题演讲、圆桌讨论与现场主持。
 
@@ -87,18 +118,17 @@ lastmod = "2026-11-21T12:18:47.417000+08:00"
 - 2023年6月16日：[第二届中国游戏出海峰会](https://blog.zengrong.net/post/hybrid-game-optimization-1/)
 
 ![GGS 2025 第四届全球游戏峰会主题演讲现场](/career-event-ggs2025.jpg)
-
 ![2025年4月10日 亚马逊云科技 × 字节跳动 × Cocos 武汉分享会现场](/career-event-wuhan-ai-2025.jpg)
-
 ![2024年12月23日 苏州「抖音小游戏行业生态新视野」超级工厂计划产品培育营演讲现场](/career-event-suzhou-2024.jpg)
-
 ![2024年12月12日 武汉「游啥说啥畅聊会」出海增长沙龙现场](/career-event-wuhan-2024.jpg)
 
-## 作为技术管理者 {{% tag "2015~2017" "dark" %}}
+## 程序员曾老师 {{% tag "2003~NOW" "dark" %}}
+
+### 写代码的技术管理者 {{% tag "2015~2017" "dark" %}}
 
 游戏部门（300+人）技术负责人，负责前端技术团队、服务器技术团队、大数据技术团队。
 
-## 作为程序员 {{% tag "2003~" "dark" %}}
+### 干活的程序员 {{% tag "2003~NOW" "dark" %}}
 
 从美术老师跨行技术，长期一线编写页游、手游、网站前后端、APP 与服务端；曾任 SAGITEAM 的 IT、运维与架构师，发起并主导维护千万日活、分离架构、一键部署的小游戏通用服务器 **MJP**。更多开源项目见 [GitHub 仓库](https://github.com/zrong?tab=repositories)。
 
@@ -113,7 +143,7 @@ lastmod = "2026-11-21T12:18:47.417000+08:00"
 - **Sprite Sheet Editor** {{< tag "Adobe AIR" >}} {{< tag "Actionscript3" >}} — Sprite Sheet 生成工具（macOS/Windows）。[说明](https://blog.zengrong.net/spritesheeteditor/)
 - **AS3 library** {{< tag "Adobe Flash" >}} {{< tag "Actionscript3" >}} — Actionscript3 时代的页游开发封装。[源码](https://github.com/zrong/as3)
 
-## 作为教师 {{% tag "2000~2023" "dark" %}}
+## 真正的曾老师 {{% tag "2000~2023" "dark" %}}
 
 ### 教学与培训
 
@@ -128,7 +158,7 @@ lastmod = "2026-11-21T12:18:47.417000+08:00"
 
 ### 出版物 {{% tag "2001~2006" "dark" %}}
 
-![书](/book-128x128.jpg)
+![出版书籍](/f82032d7d1c86247728654824936e6e9-7828de9759.png)
 
 以下出版物均为 2006 年前的早期书籍，不一一列举：
 
