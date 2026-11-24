@@ -48,6 +48,11 @@ title = "ZRONG's HOME"
   url = "https://blog.zengrong.net"
   weight = 7
 
+[[menu.main]]
+  name = "胡扯VIP"
+  pageRef = "/vip"
+  weight = 8
+
 [params]
   author = "zrong"
   beian = "鄂ICP备05002429号-1"

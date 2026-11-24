@@ -1,0 +1,94 @@
+{{ define "extra-head" }}
+  {{ $style := resources.Get "css/vip.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+{{ end }}
+
+{{ define "main" }}
+<main id="main-article" class="vip-page">
+  <div class="vip-container">
+    <h1>{{ .Title }}</h1>
+    <hr>
+    <div class="vip-intro">
+      {{ .Content }}
+    </div>
+
+    <ol class="vip-flow" aria-label="使用流程">
+      <li><span aria-hidden="true">01</span>邮箱验证</li>
+      <li><span aria-hidden="true">02</span>会员状态</li>
+      <li><span aria-hidden="true">03</span>资源下载</li>
+    </ol>
+
+    <noscript>
+      <p class="vip-message" data-type="error">此页面需要 JavaScript 才能验证邮箱和读取会员状态，请在浏览器中启用 JavaScript。</p>
+    </noscript>
+    <p id="vip-page-message" class="vip-message" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+
+    <div id="vip-app">
+      <section class="vip-section" aria-labelledby="vip-auth-title">
+        <div class="vip-section-heading">
+          <span class="vip-section-number" aria-hidden="true">01</span>
+          <h2 id="vip-auth-title" class="vip-section-title">邮箱验证</h2>
+        </div>
+        <p id="vip-loading" class="vip-muted" role="status">正在检查登录状态…</p>
+        <div id="vip-login" hidden>
+          <form id="vip-login-form">
+            <label for="vip-email">邮箱地址</label>
+            <div class="vip-login-row">
+              <input id="vip-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" placeholder="name@example.com" required>
+              <button id="vip-request-button" class="vip-button" type="submit">发送登录邮件</button>
+            </div>
+            <p class="vip-help">邮件中的链接可在其他设备打开；登录状态只保存在实际打开链接的浏览器中。</p>
+            <p id="vip-request-message" class="vip-message" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+          </form>
+        </div>
+        <p id="vip-auth-complete" class="vip-muted" hidden>邮箱验证已完成，会员状态见下方。</p>
+      </section>
+
+      <section class="vip-section" aria-labelledby="vip-account-title">
+        <div class="vip-section-heading">
+          <span class="vip-section-number" aria-hidden="true">02</span>
+          <h2 id="vip-account-title" class="vip-section-title">会员状态</h2>
+        </div>
+        <p id="vip-account-empty" class="vip-muted">验证邮箱后，这里会显示会员状态。</p>
+        <div id="vip-account" hidden>
+          <div class="vip-account-row">
+            <div class="vip-account-identity">
+              <span id="vip-account-email" class="vip-account-email"></span>
+              <span id="vip-account-status" class="vip-status"></span>
+            </div>
+            <button id="vip-logout-button" class="vip-button vip-button-secondary" type="button">退出登录</button>
+          </div>
+          <p id="vip-account-description" class="vip-help"></p>
+        </div>
+      </section>
+
+      <section class="vip-section" aria-labelledby="vip-resources-title">
+        <div class="vip-section-heading">
+          <span class="vip-section-number" aria-hidden="true">03</span>
+          <h2 id="vip-resources-title" class="vip-section-title">资源下载</h2>
+        </div>
+        <p id="vip-resources-locked" class="vip-muted">VIP 生效后，这里会显示可下载资源。</p>
+        <div id="vip-resources" hidden>
+          <p class="vip-help">点击资源对应的按钮获取短时下载链接；下载由当前浏览器打开或保存。</p>
+          <p id="vip-resource-message" class="vip-message" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+          <button id="vip-resources-retry" class="vip-button vip-button-secondary" type="button" hidden>重新加载资源</button>
+          <p id="vip-resources-empty" class="vip-muted" hidden>暂未发布资源</p>
+          <ul id="vip-resource-list" class="vip-resource-list" hidden></ul>
+        </div>
+      </section>
+    </div>
+
+    <details class="vip-privacy">
+      <summary>隐私与数据说明</summary>
+      <div class="vip-privacy-content">
+        <p>邮箱仅用于发送一次性登录链接、识别 VIP 身份、提供会员状态和受保护资源下载。</p>
+        <p>登录会话有效期为 14 天，不自动续期。退出登录后，当前浏览器中的会话将失效。</p>
+        <p>系统会记录必要的登录、验证和下载审计信息，用于防止滥用、保障账号与资源安全以及排查问题。</p>
+        <p>如需删除邮箱及相关数据，请通过<a href="/about/">关于页面的公开联系方式</a>联系。</p>
+      </div>
+    </details>
+  </div>
+</main>
+{{ $script := resources.Get "js/vip.js" | minify | fingerprint }}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+{{ end }}

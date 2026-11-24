@@ -1,4 +1,4 @@
-{{- $pages := .Site.RegularPages -}}
+{{- $pages := where .Site.RegularPages "Params.search_exclude" "ne" true -}}
 [
   {{- range $i, $p := $pages -}}
   {{- if $i }},{{ end -}}
