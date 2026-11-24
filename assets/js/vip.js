@@ -311,6 +311,16 @@ document.addEventListener('DOMContentLoaded', function () {
     return `${amount.toFixed(digits)} ${units[unit]}`;
   }
 
+  function formatUploadTime(value) {
+    const timestamp = typeof value === 'string' && value.trim() ? Number(value) : value;
+    if (typeof timestamp !== 'number' || !Number.isFinite(timestamp) || timestamp <= 0) return '';
+    const date = new Date((timestamp + 8 * 3600) * 1000);
+    if (!Number.isFinite(date.getTime())) return '';
+    const pad = function (value) { return String(value).padStart(2, '0'); };
+    const day = `${date.getUTCFullYear()}-${pad(date.getUTCMonth() + 1)}-${pad(date.getUTCDate())}`;
+    return `${day} ${pad(date.getUTCHours())}:${pad(date.getUTCMinutes())}`;
+  }
+
   function createResourceItem(item) {
     const listItem = document.createElement('li');
     listItem.className = 'vip-resource-item';
@@ -333,11 +343,28 @@ document.addEventListener('DOMContentLoaded', function () {
     header.append(name, button);
     listItem.appendChild(header);
 
-    if (typeof item.description === 'string' && item.description) {
+    const descriptionHtml = typeof item.description_html === 'string'
+      ? item.description_html.trim()
+      : '';
+    if (descriptionHtml) {
+      const description = document.createElement('div');
+      description.className = 'vip-resource-description vip-markdown';
+      // description_html 仅由 aid 的受限 Markdown 渲染器生成。
+      description.innerHTML = descriptionHtml;
+      listItem.appendChild(description);
+    } else if (typeof item.description === 'string' && item.description) {
       const description = document.createElement('p');
-      description.className = 'vip-resource-description';
+      description.className = 'vip-resource-description vip-resource-description-text';
       description.textContent = item.description;
       listItem.appendChild(description);
+    }
+
+    const uploadedAt = formatUploadTime(item.uploaded_at);
+    if (uploadedAt) {
+      const uploadTime = document.createElement('p');
+      uploadTime.className = 'vip-resource-upload-time';
+      uploadTime.textContent = `上传时间：${uploadedAt}`;
+      listItem.appendChild(uploadTime);
     }
 
     const meta = [formatSize(item.size), typeof item.mime === 'string' ? item.mime : '']

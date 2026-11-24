@@ -233,10 +233,92 @@
 }
 
 #main-article .vip-resource-description {
+  min-width: 0;
   margin: 0.5rem 0 0;
   line-height: 1.6;
   overflow-wrap: anywhere;
+}
+
+#main-article .vip-resource-description-text {
   white-space: pre-line;
+}
+
+#main-article .vip-resource-upload-time {
+  margin: 0.4rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+#main-article .vip-markdown > :first-child {
+  margin-top: 0;
+}
+
+#main-article .vip-markdown > :last-child {
+  margin-bottom: 0;
+}
+
+#main-article .vip-markdown h1,
+#main-article .vip-markdown h2,
+#main-article .vip-markdown h3,
+#main-article .vip-markdown h4 {
+  margin: 1.25em 0 0.6em;
+  line-height: 1.35;
+}
+
+#main-article .vip-markdown h1 { font-size: 1.3rem; }
+#main-article .vip-markdown h2 { font-size: 1.2rem; }
+#main-article .vip-markdown h3 { font-size: 1.1rem; }
+#main-article .vip-markdown h4 { font-size: 1rem; }
+
+#main-article .vip-markdown pre {
+  padding: 0.85rem;
+  overflow-x: auto;
+  border-radius: 4px;
+  background: var(--text-strong);
+  color: var(--bg);
+}
+
+#main-article .vip-markdown pre code {
+  background: transparent;
+  color: inherit;
+}
+
+#main-article .vip-markdown ul {
+  margin-left: 1.5rem;
+  list-style: disc outside;
+}
+
+#main-article .vip-markdown ol {
+  margin-left: 1.5rem;
+  list-style: decimal outside;
+}
+
+#main-article .vip-markdown blockquote {
+  margin-left: 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--border);
+  color: var(--text-muted);
+}
+
+#main-article .vip-markdown table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+#main-article .vip-markdown th,
+#main-article .vip-markdown td {
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+#main-article .vip-markdown img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 #main-article .vip-resource-meta {
