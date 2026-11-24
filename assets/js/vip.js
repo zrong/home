@@ -2,13 +2,18 @@ document.addEventListener('DOMContentLoaded', function () {
   const AID = (window.AID_BASE || '').replace(/\/+$/, '');
   const elements = {
     app: document.getElementById('vip-app'),
+    intro: document.getElementById('vip-intro'),
+    flow: document.getElementById('vip-flow'),
+    authSection: document.getElementById('vip-auth-section'),
+    accountNumber: document.querySelector('#vip-account-section .vip-section-number'),
+    resourcesSection: document.getElementById('vip-resources-section'),
+    resourcesNumber: document.querySelector('#vip-resources-section .vip-section-number'),
     loading: document.getElementById('vip-loading'),
     login: document.getElementById('vip-login'),
     loginForm: document.getElementById('vip-login-form'),
     email: document.getElementById('vip-email'),
     requestButton: document.getElementById('vip-request-button'),
     requestMessage: document.getElementById('vip-request-message'),
-    authComplete: document.getElementById('vip-auth-complete'),
     pageMessage: document.getElementById('vip-page-message'),
     accountEmpty: document.getElementById('vip-account-empty'),
     account: document.getElementById('vip-account'),
@@ -64,12 +69,23 @@ document.addEventListener('DOMContentLoaded', function () {
     elements.resourceList.textContent = '';
   }
 
+  function setAuthenticatedLayout(authenticated) {
+    elements.app.classList.toggle('is-authenticated', authenticated);
+    elements.intro.hidden = authenticated;
+    elements.flow.hidden = authenticated;
+    elements.authSection.hidden = authenticated;
+    elements.accountNumber.hidden = authenticated;
+    elements.resourcesNumber.hidden = authenticated;
+  }
+
   function renderLoggedOut() {
     currentStatus = 'signed-out';
+    setAuthenticatedLayout(false);
+    elements.resourcesSection.hidden = false;
     elements.loading.hidden = true;
     elements.login.hidden = false;
-    elements.authComplete.hidden = true;
     elements.account.hidden = true;
+    elements.accountDescription.hidden = true;
     elements.accountEmpty.textContent = '验证邮箱后，这里会显示会员状态。';
     elements.accountEmpty.hidden = false;
     elements.resources.hidden = true;
@@ -86,25 +102,27 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     currentStatus = knownStatus ? data.status : 'unknown';
+    setAuthenticatedLayout(true);
     elements.loading.hidden = true;
     elements.login.hidden = true;
-    elements.authComplete.hidden = false;
     elements.accountEmpty.hidden = true;
     elements.account.hidden = false;
     elements.accountEmail.textContent = data.email;
     elements.accountStatus.textContent = status.label;
     elements.accountStatus.dataset.status = knownStatus ? data.status : 'unknown';
     elements.accountDescription.textContent = status.description;
+    elements.accountDescription.hidden = currentStatus === 'active';
     clearResourceView();
 
     if (currentStatus === 'active') {
+      elements.resourcesSection.hidden = false;
       elements.resourcesLocked.hidden = true;
       elements.resources.hidden = false;
       loadDownloads(version);
     } else {
+      elements.resourcesSection.hidden = true;
       elements.resources.hidden = true;
-      elements.resourcesLocked.textContent = '当前会员状态不可下载资源。';
-      elements.resourcesLocked.hidden = false;
+      elements.resourcesLocked.hidden = true;
     }
   }
 
@@ -150,10 +168,10 @@ document.addEventListener('DOMContentLoaded', function () {
     elements.app.setAttribute('aria-busy', 'true');
     elements.loading.hidden = false;
     elements.login.hidden = true;
-    elements.authComplete.hidden = true;
     elements.account.hidden = true;
     elements.accountEmpty.textContent = '正在读取会员状态…';
     elements.accountEmpty.hidden = false;
+    elements.resourcesSection.hidden = false;
     elements.resources.hidden = true;
     elements.resourcesLocked.textContent = '读取会员状态后，这里会显示可下载资源。';
     elements.resourcesLocked.hidden = false;

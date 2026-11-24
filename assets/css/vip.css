@@ -64,6 +64,14 @@
   margin-bottom: 1rem;
 }
 
+#vip-app.is-authenticated #vip-account-section {
+  padding: 1rem 0;
+}
+
+#vip-app.is-authenticated #vip-account-section .vip-section-heading {
+  margin-bottom: 0.75rem;
+}
+
 .vip-section-number {
   color: var(--text-muted);
   font-size: 0.8rem;
@@ -228,6 +236,7 @@
   margin: 0.5rem 0 0;
   line-height: 1.6;
   overflow-wrap: anywhere;
+  white-space: pre-line;
 }
 
 #main-article .vip-resource-meta {

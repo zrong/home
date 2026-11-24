@@ -8,11 +8,11 @@
   <div class="vip-container">
     <h1>{{ .Title }}</h1>
     <hr>
-    <div class="vip-intro">
+    <div id="vip-intro" class="vip-intro">
       {{ .Content }}
     </div>
 
-    <ol class="vip-flow" aria-label="使用流程">
+    <ol id="vip-flow" class="vip-flow" aria-label="使用流程">
       <li><span aria-hidden="true">01</span>邮箱验证</li>
       <li><span aria-hidden="true">02</span>会员状态</li>
       <li><span aria-hidden="true">03</span>资源下载</li>
@@ -24,7 +24,7 @@
     <p id="vip-page-message" class="vip-message" role="status" aria-live="polite" aria-atomic="true" hidden></p>
 
     <div id="vip-app">
-      <section class="vip-section" aria-labelledby="vip-auth-title">
+      <section id="vip-auth-section" class="vip-section" aria-labelledby="vip-auth-title">
         <div class="vip-section-heading">
           <span class="vip-section-number" aria-hidden="true">01</span>
           <h2 id="vip-auth-title" class="vip-section-title">邮箱验证</h2>
@@ -41,10 +41,9 @@
             <p id="vip-request-message" class="vip-message" role="status" aria-live="polite" aria-atomic="true" hidden></p>
           </form>
         </div>
-        <p id="vip-auth-complete" class="vip-muted" hidden>邮箱验证已完成，会员状态见下方。</p>
       </section>
 
-      <section class="vip-section" aria-labelledby="vip-account-title">
+      <section id="vip-account-section" class="vip-section" aria-labelledby="vip-account-title">
         <div class="vip-section-heading">
           <span class="vip-section-number" aria-hidden="true">02</span>
           <h2 id="vip-account-title" class="vip-section-title">会员状态</h2>
@@ -62,14 +61,13 @@
         </div>
       </section>
 
-      <section class="vip-section" aria-labelledby="vip-resources-title">
+      <section id="vip-resources-section" class="vip-section" aria-labelledby="vip-resources-title">
         <div class="vip-section-heading">
           <span class="vip-section-number" aria-hidden="true">03</span>
           <h2 id="vip-resources-title" class="vip-section-title">资源下载</h2>
         </div>
         <p id="vip-resources-locked" class="vip-muted">VIP 生效后，这里会显示可下载资源。</p>
         <div id="vip-resources" hidden>
-          <p class="vip-help">点击资源对应的按钮获取短时下载链接；下载由当前浏览器打开或保存。</p>
           <p id="vip-resource-message" class="vip-message" role="status" aria-live="polite" aria-atomic="true" hidden></p>
           <button id="vip-resources-retry" class="vip-button vip-button-secondary" type="button" hidden>重新加载资源</button>
           <p id="vip-resources-empty" class="vip-muted" hidden>暂未发布资源</p>
