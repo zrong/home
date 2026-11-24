@@ -249,6 +249,12 @@
 
 .vip-resource-download { flex-shrink: 0; }
 
+.vip-login-invalid-action {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
 .vip-privacy {
   margin-top: 1rem;
   border-top: 1px solid var(--border);

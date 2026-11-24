@@ -1,0 +1,20 @@
+{{ define "extra-head" }}
+  <meta name="robots" content="noindex,nofollow">
+  {{ $style := resources.Get "css/vip.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+{{ end }}
+
+{{ define "main" }}
+<main id="main-article" class="vip-page">
+  <div class="vip-container">
+    <h1>{{ .Title }}</h1>
+    <hr>
+    <section class="vip-section vip-login-invalid">
+      <div class="vip-login-invalid-copy">
+        {{ .Content }}
+      </div>
+      <a class="vip-button vip-login-invalid-action" href="/vip/">重新获取登录链接</a>
+    </section>
+  </div>
+</main>
+{{ end }}

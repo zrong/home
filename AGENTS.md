@@ -58,7 +58,7 @@ just dev    # 自动从 localhost:8000 加载 aid API
 
 ## 胡扯VIP
 
-- `/vip/` 是独立功能页：`content/vip/index.md`、`layouts/vip/single.html`、`assets/css/vip.css` 和 `assets/js/vip.js`。页面不加入 Joplin/homesite 同步，不设置 `joplin_id`。
+- `/vip/` 是独立功能页：`content/vip/index.md`、`layouts/vip/single.html`、`assets/css/vip.css` 和 `assets/js/vip.js`。页面不加入 Joplin/homesite 同步，不设置 `joplin_id`。`/vip/login-invalid/` 使用 `content/vip-login-invalid.md` 与 `layouts/vip/invalid.html`，直接显示失效原因和重新登录入口，不加载 VIP 业务脚本；它同时设置 `search_exclude` 和 `noindex,nofollow`。
 - 主导航中「胡扯VIP」位于「BLOG」之后。页面通过 `search_exclude = true` 排除 `index.json`，但公开 HTML 和 sitemap 保留。
 - 邮箱一次性链接、VIP 会话、用户授权、上传和受保护下载均由 aid 的 `/api/vip/*` 提供；Home 只调用 API，请求必须带 `credentials: 'include'`，不得在 HTML/JS 中保存 SMTP 秘密、长期令牌或私有文件路径。
 - 资源说明按多行纯文本展示，CSS 必须保留换行。任何已登录状态都隐藏顶部介绍、三步流程和邮箱验证区；有效 VIP 直接显示账号栏与资源，待授权、停用、过期和未知状态只显示账号及必要的状态原因，不重复显示资源锁定教程。未登录时保留完整引导，底部隐私说明始终折叠保留。
