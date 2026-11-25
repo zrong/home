@@ -137,4 +137,98 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // ----- 文章目录（宽屏左栏、滚动定位、移动端折叠）-----
+  const articleToc = document.querySelector('.article-toc');
+  if (articleToc) {
+    const tocDetails = articleToc.querySelector('.article-toc-details');
+    const wideToc = window.matchMedia('(min-width: 1280px)');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const navbar = document.querySelector('.navbar');
+    const tocItems = Array.from(articleToc.querySelectorAll('nav a[href^="#"]')).map(link => {
+      let id = link.hash.slice(1);
+      try { id = decodeURIComponent(id); } catch {}
+      return { link, heading: document.getElementById(id) };
+    }).filter(item => item.heading);
+
+    let activeItem = null;
+    let tocTicking = false;
+
+    function syncTocMode() {
+      if (tocDetails) tocDetails.open = wideToc.matches;
+    }
+
+    function keepActiveVisible() {
+      if (!activeItem || !wideToc.matches || (tocDetails && !tocDetails.open)) return;
+      const linkRect = activeItem.link.getBoundingClientRect();
+      const tocRect = articleToc.getBoundingClientRect();
+      const topInset = 48;
+      const bottomInset = 16;
+      if (linkRect.top < tocRect.top + topInset) {
+        articleToc.scrollTop -= tocRect.top + topInset - linkRect.top;
+      } else if (linkRect.bottom > tocRect.bottom - bottomInset) {
+        articleToc.scrollTop += linkRect.bottom - tocRect.bottom + bottomInset;
+      }
+    }
+
+    function setActiveItem(item) {
+      if (!item) return;
+      if (activeItem === item) {
+        keepActiveVisible();
+        return;
+      }
+      if (activeItem) {
+        activeItem.link.classList.remove('is-active');
+        activeItem.link.removeAttribute('aria-current');
+      }
+      activeItem = item;
+      activeItem.link.classList.add('is-active');
+      activeItem.link.setAttribute('aria-current', 'location');
+      keepActiveVisible();
+    }
+
+    function updateActiveItem() {
+      tocTicking = false;
+      if (!tocItems.length) return;
+      const topOffset = (navbar ? navbar.offsetHeight : 0) + 32;
+      let current = tocItems[0];
+      for (const item of tocItems) {
+        if (item.heading.getBoundingClientRect().top <= topOffset) current = item;
+        else break;
+      }
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+        current = tocItems[tocItems.length - 1];
+      }
+      setActiveItem(current);
+    }
+
+    function scheduleTocUpdate() {
+      if (tocTicking) return;
+      tocTicking = true;
+      requestAnimationFrame(updateActiveItem);
+    }
+
+    tocItems.forEach(item => {
+      item.link.addEventListener('click', event => {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        item.heading.scrollIntoView({
+          behavior: reduceMotion.matches ? 'auto' : 'smooth',
+          block: 'start'
+        });
+        if (location.hash !== item.link.hash) history.pushState(null, '', item.link.href);
+        setActiveItem(item);
+      });
+    });
+
+    syncTocMode();
+    updateActiveItem();
+    wideToc.addEventListener('change', () => {
+      syncTocMode();
+      scheduleTocUpdate();
+    });
+    window.addEventListener('scroll', scheduleTocUpdate, { passive: true });
+    window.addEventListener('resize', scheduleTocUpdate);
+    window.addEventListener('load', scheduleTocUpdate, { once: true });
+  }
+
 });

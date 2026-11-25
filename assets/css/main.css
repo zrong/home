@@ -30,6 +30,7 @@
   --link-hover: #79b8ff;
   --nav-bg: rgba(26,26,46,0.95);
   --tag-dark-bg: #8b949e;
+  --tag-dark-text: #1a1a2e;
   --shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
@@ -169,12 +170,12 @@ ul { padding-left: 1.5rem; }
   .vp-search-btn { border: none !important; background: none !important; padding: 0.5rem; height: auto; }
 }
 
-.top-menu-spacer { height: 82px; }
-@media (max-width: 1024px) { .top-menu-spacer { height: 52px; } }
 @media (max-width: 360px) {
   .navbar-home-link span { display: none; }
 }
 
+.top-menu-spacer { height: 82px; }
+@media (max-width: 1024px) { .top-menu-spacer { height: 52px; } }
 
 /* ===== 头像 ===== */
 .avatar {
@@ -322,35 +323,70 @@ ul { padding-left: 1.5rem; }
 
 /* ===== 页面目录（[toc] / article-toc） ===== */
 .article-toc {
-  background: var(--bg-alt);
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0.75rem 0 1.25rem;
+  padding: 0.75rem 1rem;
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 0.75rem 1rem;
-  margin: 0.75rem 0 1.25rem;
-  max-width: 800px;
+  background: var(--bg-alt);
   font-size: 0.92rem;
 }
 .article-toc-title {
+  color: var(--text);
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--text-muted);
-  margin-bottom: 0.4rem;
+  cursor: pointer;
+}
+.article-toc-details[open] .article-toc-title { margin-bottom: 0.4rem; }
+.article-toc-title:focus-visible,
+.article-toc a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
 }
 #main-article .article-toc ul {
   margin: 0.2rem 0 0.2rem 1.2rem;
   padding-left: 0;
+  list-style: none;
 }
-#main-article .article-toc > nav > ul {
-  margin-left: 1rem;
-}
+#main-article .article-toc nav > ul { margin-left: 0; }
 #main-article .article-toc li {
   margin: 0.2rem 0;
   line-height: 1.5;
+}
+.article-toc a {
+  display: block;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  color: var(--link-hover);
+  overflow-wrap: anywhere;
+}
+.article-toc a.is-active {
+  background: var(--bg);
+  color: var(--link);
+  font-weight: 600;
 }
 .article-toc .tag {
   font-size: 0.72rem;
   padding: 1px 6px;
   margin-left: 0.25rem;
+}
+
+@media (min-width: 1280px) {
+  .article-toc {
+    --toc-width: clamp(12rem, 16vw, 15rem);
+    position: fixed;
+    z-index: 30;
+    top: 6rem;
+    left: max(1rem, calc((100vw - var(--content-width)) / 2 - var(--toc-width) - 2rem));
+    width: var(--toc-width);
+    max-height: calc(100dvh - 7rem);
+    margin: 0;
+    padding: 0.75rem;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
 }
 
 /* ===== 项目列表与介绍 ===== */
