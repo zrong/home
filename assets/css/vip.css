@@ -15,7 +15,7 @@
 
 .vip-container {
   width: 100%;
-  max-width: 48rem;
+  max-width: var(--content-width);
   min-width: 0;
   margin: 0 auto;
   padding: 0.5rem 0 2rem;
